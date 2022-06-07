@@ -8,7 +8,7 @@ class Dashboard extends BaseController
     protected UserModel $model;
 
     public function index()
-    {       
+    {     
         return view('dashboard/index');
     }
 
@@ -31,11 +31,11 @@ class Dashboard extends BaseController
         if($data){
             if($password){
                 $ses_data = [
-                    "id" => $data["id"],
-                    "nombre" => $data["nombre"],
-                    "apellido" => $data["apellido"],
-                    "email" => $data["email"],
-                    "usuario" => $data["usuario"]
+                    "id" =>$data["id"],
+                    "nombre" =>$data['nombre'],
+                    "apellido" =>$data['apellido'],
+                    "email" =>$data['email'],
+                    "usuario" =>$data['usuario'],
                 ];
                 $sesion->set($ses_data);
                 return redirect()->to('dashboard/');   
