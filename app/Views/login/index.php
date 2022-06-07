@@ -38,12 +38,13 @@
                            
                             <div class="col-lg-12">
                                 <div class="p-5">
+                                
                                     <div class="text-center">
                                         <h1 class="h4 text-gray-900 mb-4">Welcome Back!</h1>
                                     </div>
-                                    <form class="user" action="<?=base_url('login/'); ?>" autocomplete="true" method="post">
+                                    <form class="user" action="<?=base_url('dashboard/'); ?>" autocomplete="true" method="post">
                                         <div class="form-group">
-                                            <input type="user" name="user" class="form-control form-control-user"
+                                            <input type="user" name="username" class="form-control form-control-user"
                                                 id="exampleInputEmail" aria-describedby="emailHelp"
                                                 placeholder="Username">
                                         </div>
@@ -56,7 +57,14 @@
                                             Login
                                         </button>
                                         
-                                        
+                                        <?php if(session()->getFlashdata('icon')):?>
+                                            <div class="my-3 card <?= session()->getFlashdata('color')?> text-white shadow">
+                                                <div class="card-body">
+                                                    <i class="<?= session()->getFlashdata('icon');?>"></i>
+                                                <?= session()->getFlashdata('mensaje') ?>
+                                                </div>
+                                            </div>
+                                        <?php endif;?>
                                     </form>
                                 </div>
                             </div>

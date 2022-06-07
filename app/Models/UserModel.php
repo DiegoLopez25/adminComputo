@@ -21,8 +21,4 @@ class UserModel extends Model
 
     ];
     protected $skipValidation = false;
-
-    public function verificarUsuario($user,$pass){
-        $query =$this->db->query("");   
-    }
 }

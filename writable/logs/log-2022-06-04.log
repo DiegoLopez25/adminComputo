@@ -1,0 +1,84 @@
+CRITICAL - 2022-06-04 21:39:55 --> Class 'app\Models\UserModel' not found
+#0 C:\laragon\www\adminComputo\system\CodeIgniter.php(809): App\Controllers\LoginController->__construct()
+#1 C:\laragon\www\adminComputo\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#2 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-06-04 21:40:18 --> Class 'app\Models\UserModel' not found
+#0 C:\laragon\www\adminComputo\system\CodeIgniter.php(809): App\Controllers\LoginController->__construct()
+#1 C:\laragon\www\adminComputo\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#2 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-06-04 21:41:04 --> Class 'app\Models\UserModel' not found
+#0 C:\laragon\www\adminComputo\system\CodeIgniter.php(809): App\Controllers\LoginController->__construct()
+#1 C:\laragon\www\adminComputo\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#2 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-06-04 21:41:25 --> Class 'app\Models\UserModel' not found
+#0 C:\laragon\www\adminComputo\system\CodeIgniter.php(809): App\Controllers\LoginController->__construct()
+#1 C:\laragon\www\adminComputo\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#2 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-06-04 21:41:27 --> Class 'app\Models\UserModel' not found
+#0 C:\laragon\www\adminComputo\system\CodeIgniter.php(809): App\Controllers\LoginController->__construct()
+#1 C:\laragon\www\adminComputo\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#2 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-06-04 21:44:16 --> Class 'app\Models\UserModel' not found
+#0 C:\laragon\www\adminComputo\system\CodeIgniter.php(809): App\Controllers\LoginController->__construct()
+#1 C:\laragon\www\adminComputo\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#2 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-06-04 21:46:42 --> Class 'app\Models\UserModel' not found
+#0 C:\laragon\www\adminComputo\system\CodeIgniter.php(809): App\Controllers\LoginController->__construct()
+#1 C:\laragon\www\adminComputo\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#2 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-06-04 21:46:44 --> Class 'app\Models\UserModel' not found
+#0 C:\laragon\www\adminComputo\system\CodeIgniter.php(809): App\Controllers\LoginController->__construct()
+#1 C:\laragon\www\adminComputo\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#2 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-06-04 21:47:29 --> Class 'app\Models\UserModel' not found
+#0 C:\laragon\www\adminComputo\system\CodeIgniter.php(809): App\Controllers\LoginController->__construct()
+#1 C:\laragon\www\adminComputo\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#2 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-06-04 21:50:04 --> Class 'app\Models\UserModel' not found
+#0 C:\laragon\www\adminComputo\system\CodeIgniter.php(809): App\Controllers\LoginController->__construct()
+#1 C:\laragon\www\adminComputo\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#2 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-06-04 21:50:15 --> Class 'app\Models\UserModel' not found
+#0 C:\laragon\www\adminComputo\system\CodeIgniter.php(809): App\Controllers\LoginController->__construct()
+#1 C:\laragon\www\adminComputo\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#2 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-06-04 21:51:35 --> Class 'app\Models\UserModel' not found
+#0 C:\laragon\www\adminComputo\system\CodeIgniter.php(809): App\Controllers\LoginController->__construct()
+#1 C:\laragon\www\adminComputo\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#2 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-06-04 21:51:37 --> Class 'app\Models\UserModel' not found
+#0 C:\laragon\www\adminComputo\system\CodeIgniter.php(809): App\Controllers\LoginController->__construct()
+#1 C:\laragon\www\adminComputo\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#2 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-06-04 21:52:07 --> Class 'app\Models\UserModel' not found
+#0 C:\laragon\www\adminComputo\system\CodeIgniter.php(809): App\Controllers\LoginController->__construct()
+#1 C:\laragon\www\adminComputo\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#2 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
