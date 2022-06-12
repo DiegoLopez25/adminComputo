@@ -34,7 +34,8 @@ $routes->setAutoRoute(true);
 $routes->get('/', 'Dashboard::login');
 $routes->get('/login', 'Dashboard::login');
 $routes->post('/dashboard', 'Dashboard::iniciarSesion');
-$routes->get('/dashboard', 'Dashboard::index');
+$routes->get('/dashboard', 'Dashboard::index',['filter'=>'pruebaFiltro']);
+$routes->get('/dashboard/cerrar','Dashboard::cerrarSesion');
 
 
 /*

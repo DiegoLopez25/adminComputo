@@ -1,0 +1,46 @@
+CRITICAL - 2022-06-08 11:08:58 --> Undefined variable: ses
+#0 C:\laragon\www\adminComputo\app\Views\dashboard\index.php(111): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 111, Array)
+#1 C:\laragon\www\adminComputo\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\adminComputo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\adminComputo\system\Common.php(1089): CodeIgniter\View\View->render('dashboard/index', Array, true)
+#4 C:\laragon\www\adminComputo\app\Controllers\Dashboard.php(18): view('dashboard/index', Array)
+#5 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#6 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-08 11:09:38 --> Undefined variable: session
+#0 C:\laragon\www\adminComputo\app\Views\dashboard\index.php(111): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 111, Array)
+#1 C:\laragon\www\adminComputo\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\adminComputo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\adminComputo\system\Common.php(1089): CodeIgniter\View\View->render('dashboard/index', Array, true)
+#4 C:\laragon\www\adminComputo\app\Controllers\Dashboard.php(18): view('dashboard/index', Array)
+#5 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#6 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-08 12:08:09 --> Object of class CodeIgniter\Session\Session could not be converted to string
+#0 C:\laragon\www\adminComputo\system\View\View.php(210): include()
+#1 C:\laragon\www\adminComputo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\laragon\www\adminComputo\system\Common.php(1089): CodeIgniter\View\View->render('dashboard/index', Array, true)
+#3 C:\laragon\www\adminComputo\app\Controllers\Dashboard.php(18): view('dashboard/index', Array)
+#4 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#5 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-08 19:59:27 --> Call to undefined method app\Models\UserModel::and
+#0 C:\laragon\www\adminComputo\app\Controllers\Dashboard.php(36): CodeIgniter\Model->__call('and', Array)
+#1 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\Dashboard->iniciarSesion()
+#2 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-08 21:32:14 --> Call to undefined method app\Models\UserModel::and
+#0 C:\laragon\www\adminComputo\app\Controllers\Dashboard.php(36): CodeIgniter\Model->__call('and', Array)
+#1 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\Dashboard->iniciarSesion()
+#2 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

@@ -1,0 +1,88 @@
+CRITICAL - 2022-06-10 10:10:26 -->  route cannot be found while reverse-routing.
+#0 C:\laragon\www\adminComputo\system\HTTP\RedirectResponse.php(56): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 C:\laragon\www\adminComputo\system\Common.php(832): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 C:\laragon\www\adminComputo\app\Views\dashboard\index.php(6): redirect('/login')
+#3 C:\laragon\www\adminComputo\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#4 C:\laragon\www\adminComputo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\laragon\www\adminComputo\system\Common.php(1089): CodeIgniter\View\View->render('dashboard/index', Array, true)
+#6 C:\laragon\www\adminComputo\app\Controllers\Dashboard.php(14): view('dashboard/index')
+#7 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#8 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#9 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-06-10 10:33:43 --> Class 'Config\DashboardFilter' not found
+#0 C:\laragon\www\adminComputo\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('dashboard', 'before')
+#1 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2022-06-10 10:36:29 --> Class 'Config\DashboardFilter' not found
+#0 C:\laragon\www\adminComputo\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('dashboard', 'before')
+#1 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2022-06-10 10:38:07 --> Class 'Config\DashboardFilter' not found
+#0 C:\laragon\www\adminComputo\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('dashboard', 'before')
+#1 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2022-06-10 10:38:32 --> Class 'Config\DashboardFilter' not found
+#0 C:\laragon\www\adminComputo\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('dashboard', 'before')
+#1 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2022-06-10 10:45:03 --> Class 'Config\DashboardFilter' not found
+#0 C:\laragon\www\adminComputo\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('dashboard', 'before')
+#1 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2022-06-10 10:45:37 --> Class 'Config\DashboardFilter' not found
+#0 C:\laragon\www\adminComputo\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('dashboard', 'before')
+#1 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2022-06-10 10:56:50 --> Call to undefined method CodeIgniter\Session\Session::session_destroy()
+#0 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\Dashboard->cerrarSesion()
+#1 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-06-10 10:59:41 --> Call to undefined method CodeIgniter\Session\Session::session_destroy()
+#0 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\Dashboard->cerrarSesion()
+#1 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-06-10 10:59:56 --> Call to undefined method CodeIgniter\Session\Session::session_destroy()
+#0 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\Dashboard->cerrarSesion()
+#1 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-06-10 11:08:57 --> Call to undefined method CodeIgniter\Session\Session::session_destroy()
+#0 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\Dashboard->cerrarSesion()
+#1 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-06-10 11:15:28 --> Call to undefined method CodeIgniter\Session\Session::session_destroy()
+#0 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\Dashboard->cerrarSesion()
+#1 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-06-10 11:38:37 --> Class 'Config\DashboardFilter' not found
+#0 C:\laragon\www\adminComputo\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('dashboard', 'before')
+#1 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2022-06-10 11:39:06 --> Class 'Config\DashboardFilter' not found
+#0 C:\laragon\www\adminComputo\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('dashboard', 'before')
+#1 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2022-06-10 11:39:09 --> Class 'Config\DashboardFilter' not found
+#0 C:\laragon\www\adminComputo\system\CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('dashboard', 'before')
+#1 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#3 {main}

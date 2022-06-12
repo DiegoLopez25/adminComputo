@@ -3,12 +3,14 @@
 namespace App\Controllers;
 use App\Models\UserModel;
 
+
 class Dashboard extends BaseController
 {
     protected UserModel $model;
 
     public function index()
-    {     
+    {          
+
         return view('dashboard/index');
     }
 
@@ -23,22 +25,23 @@ class Dashboard extends BaseController
     }
 
     public function iniciarSesion(){
-        $sesion = session();
-        $usuario = $this->request->getVar("username");
-        $password = $this->model->where("password",md5($this->request->getVar("password")))->first();
+        $session = session();
+        $user = $this->request->getVar("username");
+        $password = md5($this->request->getVar("password"));
 
-        $data = $this->model->where("usuario",$usuario)->first();
+        $data = $this->model->where("usuario",$user)->first();
+        $log = $this->model->select("id,nombre,apellido,usuario")->where("usuario",$user)->where("password",$password)->first();
         if($data){
-            if($password){
-                $ses_data = [
+            if($log){
+                $ses_data=[
                     "id" =>$data["id"],
-                    "nombre" =>$data['nombre'],
-                    "apellido" =>$data['apellido'],
-                    "email" =>$data['email'],
-                    "usuario" =>$data['usuario'],
+                    "nombre" =>$data["nombre"],
+                    "apellido" =>$data["apellido"],
+                    "usuario" =>$data["usuario"],
+                    "sesion" => TRUE
                 ];
-                $sesion->set($ses_data);
-                return redirect()->to('dashboard/');   
+                $session->setTempdata($ses_data,300);
+                return redirect()->to('/dashboard');   
             }else{
                 $msg = "La contraseña que ingreso es incorrecta";
                 return redirect()->to('/login')->with('icon','fas fa-exclamation-circle')->with('mensaje',$msg)->with('color','bg-danger');
@@ -47,5 +50,11 @@ class Dashboard extends BaseController
             $msg ="El usuario no existe" ;
             return redirect()->to('/login')->with('icon','fas fa-exclamation-triangle')->with('mensaje',$msg)->with('color','bg-danger');
         }
+    }
+
+    public function cerrarSesion(){
+        session();
+        session()->destroy();
+        return redirect()->to('/login');
     }
 }
