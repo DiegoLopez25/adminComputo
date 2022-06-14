@@ -31,7 +31,7 @@
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="<?=current_url()?>">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="<?= site_url("/dashboard")?>">
                 <div class="sidebar-brand-icon mx-3">
                     <i class="fas fa-desktop"></i>
                 </div>
@@ -43,7 +43,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
-                <a class="nav-link" href="<?= current_url()?>">
+                <a class="nav-link" href="<?= site_url("/dashboard")?>">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span>
                 </a>
@@ -56,11 +56,11 @@
                 </a>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="<?= current_url()?>">
+                        <a class="collapse-item" href="<?= base_url('/tipo-incidente')?>">
                             <i class="fas fa-fw fa-list"></i>
                             <span>Tipos de incidentes</span>
                         </a>
-                        <a class="collapse-item" href="<?= current_url()?>">
+                        <a class="collapse-item" href="<?= base_url('/incidente')?>">
                             <i class="fas fa-fw fa-tools"></i>
                             <span>Incidentes registrados</span>
                         </a>
@@ -70,19 +70,19 @@
             
             
             <li class="nav-item ">
-                <a class="nav-link" href="<?= current_url()?>">
+                <a class="nav-link" href="<?= base_url('/dispositivo')?>">
                     <i class="fas fa-fw fa-desktop"></i>
                     <span>Dispositivos</span>
                 </a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link" href="<?= current_url()?>">
+                <a class="nav-link" href="<?= site_url("/accesos-permisos")?>">
                     <i class="fas fa-fw fa-address-card"></i>
                     <span>Accesos y permisos</span>
                 </a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link" href="<?= current_url()?>">
+                <a class="nav-link" href="<?= base_url('/usuario')?>">
                     <i class="fas fa-fw fa-users"></i>
                     <span>Usuarios</span>
                 </a>
@@ -91,6 +91,12 @@
                 <a class="nav-link" href="<?= base_url('/centro-computo')?>">
                     <i class="fas fa-fw fa-laptop-house"></i>
                     <span>Centros de computo</span>
+                </a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="<?= base_url('/centro-computo')?>">
+                    <i class="fas fa-fw fa-laptop-house"></i>
+                    <span>Bitacora</span>
                 </a>
             </li>
             <!-- Sidebar Toggler (Sidebar) -->
@@ -147,7 +153,7 @@
                 <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="<?=current_url()."/cerrar";?>">Logout</a>
+                    <a class="btn btn-primary" href="<?=base_url("dashboard/cerrar");?>">Logout</a>
                 </div>
             </div>
         </div>

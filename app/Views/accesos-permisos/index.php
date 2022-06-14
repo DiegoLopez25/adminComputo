@@ -143,12 +143,12 @@
 
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between col-sm-12 col-xs-12">
-        <h1 class="h3 text-gray-800 float-left ">Centros de computo</h1>
-        <div class="d-none d-sm-inline-block"><a href="<?=site_url('/dashboard')?>">Home</a> / <a href="http://">Lista centros de computo</a></div> 
+        <h1 class="h3 text-gray-800 float-left ">Usuarios</h1>
+        <div class="d-none d-sm-inline-block"><a href="<?=site_url('/dashboard')?>">Home</a> / <a href="http://">Lista de usuarios</a></div> 
     </div>
     <div class="row mb-3 col-sm-12 col-xs-12">
         <div class="col-md-3 col-sm-12 offset-md-9 ">
-            <a href="#" class="btn btn-success float-right"><i class="fas fa-plus"></i> Nuevo centro de computo</a>
+            <a href="#" class="btn btn-success float-right"><i class="fas fa-plus"></i> <span>Nuevo usuario</span></a>
         </div>
     </div>
 
@@ -157,7 +157,7 @@
                 <div class="card shadow">
                     <div class="card-header"> 
                         <div class="d-sm-flex align-items-center justify-content-between">
-                            <h4 class="font-weight-bold text-primary">Lista centros de computo</h4>
+                            <h4 class="font-weight-bold text-primary">Lista Usuarios</h4>
                             <div class="d-none d-sm-inline-block">
                                 <div class="input-group input-group-sm" style="width: 225px;">
                                     <select name="opciones" class="form-control float-left" id="filtro">
@@ -174,21 +174,26 @@
                     </div>
                     <div class="card-body table-responsive">
                         
-                        <table class="table table-hover text-nowrap">
+                        <table class="table table-bordered text-nowrap">
                             <thead>
                                 <tr>
                                     <th>Id</th>
-                                    <th>Nombre</th>
+                                    <th>nombre</th>
+                                    <th>Usuario</th>
                                     <th>Estado</th>
+                                    <th>Rol</th>
                                     <th>Opciones</th>
                                 </tr>
                             </thead>
                             <tbody>
                                    <tr>
                                     <td>9</td>
-                                    <td>CT-1</td>
-                                    <td ><span class="bg-success text-white rounded">Activo</span> </td>
+                                    <td>Diego</td>
+                                    <td>diego25</td>
+                                    <td><span class="text-white bg-danger rounded">Inactivo</span></td>
+                                    <td>Administrador</td>
                                     <td class="project-actions "> 
+                                        <a data-toggle="modal" data-target="#modal-access" onclick="seleccionarClienteParaBorrar(9)" class="btn btn-warning btn-sm"> <i class=" text-white fa fa-key"></i></a>
                                         <a href="http://codeigniter-crud-diego.test/cliente/addEdit/9" class="btn btn-info btn-sm"><i class="fa fa-pencil-alt"></i></a>
                                         <a data-toggle="modal" data-target="#modal-delete" onclick="seleccionarClienteParaBorrar(9)" class="btn btn-danger btn-sm"> <i class=" text-white fa fa-trash"></i></a>
                                     </td>
@@ -249,22 +254,45 @@
                     </div>
                 </div>
             </div>
-            <!-- Logout Modal-->
+            <!-- Delete Modal-->
             <div class="modal fade" id="modal-delete" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
                 aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header bg-danger">
-                            <h5 class="modal-title text-white" id="exampleModalLabel">Eliminar centro de computo</h5>
+                            <h5 class="modal-title text-white" id="exampleModalLabel">Eliminar Usuario</h5>
                             <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">×</span>
                             </button>
                         </div>
                         <div class="modal-body">
-                            <form action="<?= base_url("centro-computo/delete");?>" id="frmDelete" method="post">
+                            <form action="<?= base_url("usuario/delete");?>" id="frmDelete" method="post">
                                             <input type="hidden" id="deleteId" name="id">
                             </form>
-                            ¿Desea eliminar este centro de computo?
+                            ¿Desea eliminar este Usuario?
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
+                            <button class="btn btn-danger" onclick=""><i class="fa fa-trash"></i>S&iacute, Eliminar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Accesos Modal-->
+            <div class="modal fade" id="modal-access" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header bg-danger">
+                            <h5 class="modal-title text-white" id="exampleModalLabel">Accesos y Permisos</h5>
+                            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="<?= base_url("usuario/delete");?>" id="frmDelete" method="post">
+                                            <input type="hidden" id="deleteId" name="id">
+                            </form>
                         </div>
                         <div class="modal-footer">
                             <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>

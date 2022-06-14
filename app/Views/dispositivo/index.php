@@ -143,12 +143,12 @@
 
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between col-sm-12 col-xs-12">
-        <h1 class="h3 text-gray-800 float-left ">Centros de computo</h1>
-        <div class="d-none d-sm-inline-block"><a href="<?=site_url('/dashboard')?>">Home</a> / <a href="http://">Lista centros de computo</a></div> 
+        <h1 class="h3 text-gray-800 float-left ">Dispositivos</h1>
+        <div class="d-none d-sm-inline-block"><a href="<?=site_url('/dashboard')?>">Home</a> / <a href="http://">Lista de dispositivos</a></div> 
     </div>
     <div class="row mb-3 col-sm-12 col-xs-12">
         <div class="col-md-3 col-sm-12 offset-md-9 ">
-            <a href="#" class="btn btn-success float-right"><i class="fas fa-plus"></i> Nuevo centro de computo</a>
+            <a href="#" class="btn btn-success float-right"><i class="fas fa-plus"></i> Nuevo dispositivo</a>
         </div>
     </div>
 
@@ -157,7 +157,7 @@
                 <div class="card shadow">
                     <div class="card-header"> 
                         <div class="d-sm-flex align-items-center justify-content-between">
-                            <h4 class="font-weight-bold text-primary">Lista centros de computo</h4>
+                            <h4 class="font-weight-bold text-primary">Lista Dispositivos</h4>
                             <div class="d-none d-sm-inline-block">
                                 <div class="input-group input-group-sm" style="width: 225px;">
                                     <select name="opciones" class="form-control float-left" id="filtro">
@@ -178,16 +178,20 @@
                             <thead>
                                 <tr>
                                     <th>Id</th>
+                                    <th>Serial</th>
                                     <th>Nombre</th>
                                     <th>Estado</th>
+                                    <th>Centro de computo</th>
                                     <th>Opciones</th>
                                 </tr>
                             </thead>
                             <tbody>
                                    <tr>
                                     <td>9</td>
-                                    <td>CT-1</td>
+                                    <td>U2000O21</td>
+                                    <td>Mouse lenovo J15</td>
                                     <td ><span class="bg-success text-white rounded">Activo</span> </td>
+                                    <td >CT-1</td>
                                     <td class="project-actions "> 
                                         <a href="http://codeigniter-crud-diego.test/cliente/addEdit/9" class="btn btn-info btn-sm"><i class="fa fa-pencil-alt"></i></a>
                                         <a data-toggle="modal" data-target="#modal-delete" onclick="seleccionarClienteParaBorrar(9)" class="btn btn-danger btn-sm"> <i class=" text-white fa fa-trash"></i></a>
@@ -255,16 +259,16 @@
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header bg-danger">
-                            <h5 class="modal-title text-white" id="exampleModalLabel">Eliminar centro de computo</h5>
+                            <h5 class="modal-title text-white" id="exampleModalLabel">Eliminar Dispositivo</h5>
                             <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">×</span>
                             </button>
                         </div>
                         <div class="modal-body">
-                            <form action="<?= base_url("centro-computo/delete");?>" id="frmDelete" method="post">
+                            <form action="<?= base_url("dispositivo/delete");?>" id="frmDelete" method="post">
                                             <input type="hidden" id="deleteId" name="id">
                             </form>
-                            ¿Desea eliminar este centro de computo?
+                            ¿Desea eliminar este dispositivo?
                         </div>
                         <div class="modal-footer">
                             <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>

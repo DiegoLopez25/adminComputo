@@ -1,16 +1,16 @@
 <?php
 
 namespace App\Controllers;
-use App\Models\UserModel;
+use App\Models\UsuarioModel;
 
 
 class Dashboard extends BaseController
 {
-    protected UserModel $model;
+    protected UsuarioModel $model;
 
     function __construct()
     {   
-        $this->model = new UserModel();
+        $this->model = new UsuarioModel();
     }
 
     public function index()
