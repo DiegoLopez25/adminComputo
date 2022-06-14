@@ -18,7 +18,7 @@ if (file_exists(SYSTEMPATH . 'Config/Routes.php')) {
  */
 $routes->setDefaultNamespace('App\Controllers');
 $routes->setDefaultController('Dashboard');
-$routes->setDefaultMethod('login');
+$routes->setDefaultMethod('dashboard');
 $routes->setTranslateURIDashes(false);
 $routes->set404Override();
 $routes->setAutoRoute(true);
@@ -36,6 +36,7 @@ $routes->get('/login', 'Dashboard::login');
 $routes->post('/dashboard', 'Dashboard::iniciarSesion');
 $routes->get('/dashboard', 'Dashboard::index',['filter'=>'pruebaFiltro']);
 $routes->get('/dashboard/cerrar','Dashboard::cerrarSesion');
+$routes->get('/centro-computo','CentroComputoController::index');
 
 
 /*

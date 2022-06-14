@@ -12,7 +12,7 @@ class PruebaFiltro implements FilterInterface
     {
         // Do something here
         
-        if(!session()->get('nombre')){
+        if(!session()->get('sesion')){
             return redirect()->to('/login');
         }
     }
