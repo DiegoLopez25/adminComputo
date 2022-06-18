@@ -1,0 +1,703 @@
+ERROR - 2022-06-15 01:22:59 --> Unknown column 'C.id' in 'field list'
+CRITICAL - 2022-06-15 01:22:59 --> Call to a member function getResult() on bool
+#0 C:\laragon\www\adminComputo\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(5, 0)
+#1 C:\laragon\www\adminComputo\system\BaseModel.php(1088): CodeIgniter\BaseModel->findAll(5, 0)
+#2 C:\laragon\www\adminComputo\app\Controllers\CentroComputoController.php(21): CodeIgniter\BaseModel->paginate(5, 'default', 1)
+#3 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\CentroComputoController->index()
+#4 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CentroComputoController))
+#5 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2022-06-15 01:23:14 --> Unknown column 'C.id' in 'field list'
+CRITICAL - 2022-06-15 01:23:15 --> Call to a member function getResult() on bool
+#0 C:\laragon\www\adminComputo\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(5, 0)
+#1 C:\laragon\www\adminComputo\system\BaseModel.php(1088): CodeIgniter\BaseModel->findAll(5, 0)
+#2 C:\laragon\www\adminComputo\app\Controllers\CentroComputoController.php(21): CodeIgniter\BaseModel->paginate(5, 'default', 1)
+#3 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\CentroComputoController->index()
+#4 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CentroComputoController))
+#5 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2022-06-15 01:23:31 --> Unknown column 'C.id' in 'field list'
+CRITICAL - 2022-06-15 01:23:31 --> Unknown column 'C.id' in 'field list'
+#0 C:\laragon\www\adminComputo\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `C`.`id`...', 0)
+#1 C:\laragon\www\adminComputo\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `C`.`id`...')
+#2 C:\laragon\www\adminComputo\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `C`.`id`...')
+#3 C:\laragon\www\adminComputo\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT `C`.`id`...', Array, false)
+#4 C:\laragon\www\adminComputo\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\adminComputo\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(5, 0)
+#6 C:\laragon\www\adminComputo\system\BaseModel.php(1088): CodeIgniter\BaseModel->findAll(5, 0)
+#7 C:\laragon\www\adminComputo\app\Controllers\CentroComputoController.php(21): CodeIgniter\BaseModel->paginate(5, 'default', 1)
+#8 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\CentroComputoController->index()
+#9 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CentroComputoController))
+#10 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-06-15 01:24:00 --> Column 'id' in field list is ambiguous
+CRITICAL - 2022-06-15 01:24:01 --> Column 'id' in field list is ambiguous
+#0 C:\laragon\www\adminComputo\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `id`, `n...', 0)
+#1 C:\laragon\www\adminComputo\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `n...')
+#2 C:\laragon\www\adminComputo\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `n...')
+#3 C:\laragon\www\adminComputo\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `n...', Array, false)
+#4 C:\laragon\www\adminComputo\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\adminComputo\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(5, 0)
+#6 C:\laragon\www\adminComputo\system\BaseModel.php(1088): CodeIgniter\BaseModel->findAll(5, 0)
+#7 C:\laragon\www\adminComputo\app\Controllers\CentroComputoController.php(21): CodeIgniter\BaseModel->paginate(5, 'default', 1)
+#8 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\CentroComputoController->index()
+#9 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CentroComputoController))
+#10 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-06-15 01:26:44 --> Unknown column 'C.id_estado' in 'on clause'
+CRITICAL - 2022-06-15 01:26:45 --> Unknown column 'C.id_estado' in 'on clause'
+#0 C:\laragon\www\adminComputo\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\laragon\www\adminComputo\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\laragon\www\adminComputo\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\laragon\www\adminComputo\system\Database\BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\laragon\www\adminComputo\system\Model.php(509): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\laragon\www\adminComputo\system\BaseModel.php(1084): CodeIgniter\Model->countAllResults(false)
+#6 C:\laragon\www\adminComputo\app\Controllers\CentroComputoController.php(22): CodeIgniter\BaseModel->paginate(5, 'default', 1)
+#7 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\CentroComputoController->index()
+#8 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CentroComputoController))
+#9 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-06-15 01:26:47 --> Unknown column 'C.id_estado' in 'on clause'
+CRITICAL - 2022-06-15 01:26:48 --> Unknown column 'C.id_estado' in 'on clause'
+#0 C:\laragon\www\adminComputo\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\laragon\www\adminComputo\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\laragon\www\adminComputo\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\laragon\www\adminComputo\system\Database\BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\laragon\www\adminComputo\system\Model.php(509): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\laragon\www\adminComputo\system\BaseModel.php(1084): CodeIgniter\Model->countAllResults(false)
+#6 C:\laragon\www\adminComputo\app\Controllers\CentroComputoController.php(22): CodeIgniter\BaseModel->paginate(5, 'default', 1)
+#7 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\CentroComputoController->index()
+#8 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CentroComputoController))
+#9 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-06-15 11:31:50 --> Unknown column 'C.id_estado' in 'on clause'
+CRITICAL - 2022-06-15 11:31:50 --> Unknown column 'C.id_estado' in 'on clause'
+#0 C:\laragon\www\adminComputo\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\laragon\www\adminComputo\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\laragon\www\adminComputo\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\laragon\www\adminComputo\system\Database\BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\laragon\www\adminComputo\system\Model.php(509): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\laragon\www\adminComputo\system\BaseModel.php(1084): CodeIgniter\Model->countAllResults(false)
+#6 C:\laragon\www\adminComputo\app\Controllers\CentroComputoController.php(22): CodeIgniter\BaseModel->paginate(5, 'default', 1)
+#7 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\CentroComputoController->index()
+#8 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CentroComputoController))
+#9 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-06-15 11:33:19 --> Unknown column 'C.id_estado' in 'on clause'
+CRITICAL - 2022-06-15 11:33:19 --> Unknown column 'C.id_estado' in 'on clause'
+#0 C:\laragon\www\adminComputo\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\laragon\www\adminComputo\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\laragon\www\adminComputo\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\laragon\www\adminComputo\system\Database\BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\laragon\www\adminComputo\system\Model.php(509): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\laragon\www\adminComputo\system\BaseModel.php(1084): CodeIgniter\Model->countAllResults(false)
+#6 C:\laragon\www\adminComputo\app\Controllers\CentroComputoController.php(22): CodeIgniter\BaseModel->paginate(5, 'default', 1)
+#7 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\CentroComputoController->index()
+#8 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CentroComputoController))
+#9 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-06-15 11:34:10 --> Unknown column 'E.id' in 'on clause'
+CRITICAL - 2022-06-15 11:34:10 --> Unknown column 'E.id' in 'on clause'
+#0 C:\laragon\www\adminComputo\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\laragon\www\adminComputo\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\laragon\www\adminComputo\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\laragon\www\adminComputo\system\Database\BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\laragon\www\adminComputo\system\Model.php(509): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\laragon\www\adminComputo\system\BaseModel.php(1084): CodeIgniter\Model->countAllResults(false)
+#6 C:\laragon\www\adminComputo\app\Controllers\CentroComputoController.php(22): CodeIgniter\BaseModel->paginate(5, 'default', 1)
+#7 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\CentroComputoController->index()
+#8 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CentroComputoController))
+#9 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-06-15 11:36:12 --> Column 'id' in field list is ambiguous
+CRITICAL - 2022-06-15 11:36:13 --> Column 'id' in field list is ambiguous
+#0 C:\laragon\www\adminComputo\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `id`, `n...', 0)
+#1 C:\laragon\www\adminComputo\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `n...')
+#2 C:\laragon\www\adminComputo\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `n...')
+#3 C:\laragon\www\adminComputo\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `n...', Array, false)
+#4 C:\laragon\www\adminComputo\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\adminComputo\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(5, 0)
+#6 C:\laragon\www\adminComputo\system\BaseModel.php(1088): CodeIgniter\BaseModel->findAll(5, 0)
+#7 C:\laragon\www\adminComputo\app\Controllers\CentroComputoController.php(22): CodeIgniter\BaseModel->paginate(5, 'default', 1)
+#8 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\CentroComputoController->index()
+#9 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CentroComputoController))
+#10 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-06-15 11:42:04 --> Column 'id' in field list is ambiguous
+CRITICAL - 2022-06-15 11:42:04 --> Column 'id' in field list is ambiguous
+#0 C:\laragon\www\adminComputo\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `id`, `n...', 0)
+#1 C:\laragon\www\adminComputo\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `n...')
+#2 C:\laragon\www\adminComputo\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `n...')
+#3 C:\laragon\www\adminComputo\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `n...', Array, false)
+#4 C:\laragon\www\adminComputo\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\adminComputo\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(5, 0)
+#6 C:\laragon\www\adminComputo\system\BaseModel.php(1088): CodeIgniter\BaseModel->findAll(5, 0)
+#7 C:\laragon\www\adminComputo\app\Controllers\CentroComputoController.php(22): CodeIgniter\BaseModel->paginate(5, 'default', 1)
+#8 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\CentroComputoController->index()
+#9 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CentroComputoController))
+#10 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-06-15 11:42:06 --> Column 'id' in field list is ambiguous
+CRITICAL - 2022-06-15 11:42:07 --> Column 'id' in field list is ambiguous
+#0 C:\laragon\www\adminComputo\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `id`, `n...', 0)
+#1 C:\laragon\www\adminComputo\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `n...')
+#2 C:\laragon\www\adminComputo\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `n...')
+#3 C:\laragon\www\adminComputo\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `n...', Array, false)
+#4 C:\laragon\www\adminComputo\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\adminComputo\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(5, 0)
+#6 C:\laragon\www\adminComputo\system\BaseModel.php(1088): CodeIgniter\BaseModel->findAll(5, 0)
+#7 C:\laragon\www\adminComputo\app\Controllers\CentroComputoController.php(22): CodeIgniter\BaseModel->paginate(5, 'default', 1)
+#8 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\CentroComputoController->index()
+#9 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CentroComputoController))
+#10 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-06-15 11:46:24 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.`id_estado = E`.`id` USING (`inner`)' at line 3
+CRITICAL - 2022-06-15 11:46:25 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.`id_estado = E`.`id` USING (`inner`)' at line 3
+#0 C:\laragon\www\adminComputo\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\laragon\www\adminComputo\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\laragon\www\adminComputo\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\laragon\www\adminComputo\system\Database\BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\laragon\www\adminComputo\system\Model.php(509): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\laragon\www\adminComputo\system\BaseModel.php(1084): CodeIgniter\Model->countAllResults(false)
+#6 C:\laragon\www\adminComputo\app\Controllers\CentroComputoController.php(22): CodeIgniter\BaseModel->paginate(5, 'default', 1)
+#7 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\CentroComputoController->index()
+#8 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CentroComputoController))
+#9 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-06-15 11:47:51 --> Unknown column 'C.id_estado' in 'on clause'
+CRITICAL - 2022-06-15 11:47:52 --> Unknown column 'C.id_estado' in 'on clause'
+#0 C:\laragon\www\adminComputo\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\laragon\www\adminComputo\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\laragon\www\adminComputo\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\laragon\www\adminComputo\system\Database\BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\laragon\www\adminComputo\system\Model.php(509): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\laragon\www\adminComputo\system\BaseModel.php(1084): CodeIgniter\Model->countAllResults(false)
+#6 C:\laragon\www\adminComputo\app\Controllers\CentroComputoController.php(22): CodeIgniter\BaseModel->paginate(5, 'default', 1)
+#7 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\CentroComputoController->index()
+#8 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CentroComputoController))
+#9 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-06-15 11:54:35 --> Unknown column 'C.estado' in 'field list'
+CRITICAL - 2022-06-15 11:54:35 --> Unknown column 'C.estado' in 'field list'
+#0 C:\laragon\www\adminComputo\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `C`.`id`...', 0)
+#1 C:\laragon\www\adminComputo\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `C`.`id`...')
+#2 C:\laragon\www\adminComputo\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `C`.`id`...')
+#3 C:\laragon\www\adminComputo\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT `C`.`id`...', Array, false)
+#4 C:\laragon\www\adminComputo\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\adminComputo\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(5, 0)
+#6 C:\laragon\www\adminComputo\system\BaseModel.php(1088): CodeIgniter\BaseModel->findAll(5, 0)
+#7 C:\laragon\www\adminComputo\app\Controllers\CentroComputoController.php(24): CodeIgniter\BaseModel->paginate(5, 'default', 1)
+#8 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\CentroComputoController->index()
+#9 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CentroComputoController))
+#10 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-06-15 11:54:47 --> Undefined index: id_estado
+#0 C:\laragon\www\adminComputo\app\Views\centrocomputo\index.php(194): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\laragon\\www\\...', 194, Array)
+#1 C:\laragon\www\adminComputo\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\adminComputo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\adminComputo\system\Common.php(1089): CodeIgniter\View\View->render('centrocomputo/i...', Array, true)
+#4 C:\laragon\www\adminComputo\app\Controllers\CentroComputoController.php(38): view('centrocomputo/i...', Array)
+#5 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\CentroComputoController->index()
+#6 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CentroComputoController))
+#7 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-06-15 12:00:37 --> Unknown column 'E.id' in 'on clause'
+CRITICAL - 2022-06-15 12:00:38 --> Unknown column 'E.id' in 'on clause'
+#0 C:\laragon\www\adminComputo\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\laragon\www\adminComputo\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\laragon\www\adminComputo\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\laragon\www\adminComputo\system\Database\BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\laragon\www\adminComputo\system\Model.php(509): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\laragon\www\adminComputo\system\BaseModel.php(1084): CodeIgniter\Model->countAllResults(false)
+#6 C:\laragon\www\adminComputo\app\Controllers\CentroComputoController.php(24): CodeIgniter\BaseModel->paginate(5, 'default', 1)
+#7 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\CentroComputoController->index()
+#8 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CentroComputoController))
+#9 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-06-15 12:01:58 --> Trying to access array offset on value of type null
+#0 C:\laragon\www\adminComputo\app\Views\centrocomputo\index.php(191): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\laragon\\www\\...', 191, Array)
+#1 C:\laragon\www\adminComputo\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\adminComputo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\adminComputo\system\Common.php(1089): CodeIgniter\View\View->render('centrocomputo/i...', Array, true)
+#4 C:\laragon\www\adminComputo\app\Controllers\CentroComputoController.php(38): view('centrocomputo/i...', Array)
+#5 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\CentroComputoController->index()
+#6 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CentroComputoController))
+#7 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-06-15 12:07:59 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT C.id, C.nombre, C.descripcion, E.estado FROM tbl_centro_computo AS C INNE' at line 1
+CRITICAL - 2022-06-15 12:08:00 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT C.id, C.nombre, C.descripcion, E.estado FROM tbl_centro_computo AS C INNE' at line 1
+#0 C:\laragon\www\adminComputo\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT SELECT C...', 0)
+#1 C:\laragon\www\adminComputo\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SELECT C...')
+#2 C:\laragon\www\adminComputo\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SELECT C...')
+#3 C:\laragon\www\adminComputo\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT SELECT C...', Array, false)
+#4 C:\laragon\www\adminComputo\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\adminComputo\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(5, 0)
+#6 C:\laragon\www\adminComputo\system\BaseModel.php(1088): CodeIgniter\BaseModel->findAll(5, 0)
+#7 C:\laragon\www\adminComputo\app\Controllers\CentroComputoController.php(26): CodeIgniter\BaseModel->paginate(5, 'default', 1)
+#8 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\CentroComputoController->index()
+#9 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CentroComputoController))
+#10 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-06-15 12:08:25 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT C.id, C.nombre, C.descripcion, E.estado FROM tbl_centro_computo AS C INNE' at line 1
+CRITICAL - 2022-06-15 12:08:25 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT C.id, C.nombre, C.descripcion, E.estado FROM tbl_centro_computo AS C INNE' at line 1
+#0 C:\laragon\www\adminComputo\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT SELECT C...', 0)
+#1 C:\laragon\www\adminComputo\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SELECT C...')
+#2 C:\laragon\www\adminComputo\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SELECT C...')
+#3 C:\laragon\www\adminComputo\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT SELECT C...', Array, false)
+#4 C:\laragon\www\adminComputo\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\adminComputo\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(5, 0)
+#6 C:\laragon\www\adminComputo\system\BaseModel.php(1088): CodeIgniter\BaseModel->findAll(5, 0)
+#7 C:\laragon\www\adminComputo\app\Controllers\CentroComputoController.php(26): CodeIgniter\BaseModel->paginate(5, 'default', 1)
+#8 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\CentroComputoController->index()
+#9 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CentroComputoController))
+#10 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-06-15 12:13:01 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT C.id, C.nombre, C.descripcion, E.estado FROM tbl_centro_computo AS C INNE' at line 1
+CRITICAL - 2022-06-15 12:13:01 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT C.id, C.nombre, C.descripcion, E.estado FROM tbl_centro_computo AS C INNE' at line 1
+#0 C:\laragon\www\adminComputo\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT SELECT C...', 0)
+#1 C:\laragon\www\adminComputo\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SELECT C...')
+#2 C:\laragon\www\adminComputo\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SELECT C...')
+#3 C:\laragon\www\adminComputo\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT SELECT C...', Array, false)
+#4 C:\laragon\www\adminComputo\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\adminComputo\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(5, 0)
+#6 C:\laragon\www\adminComputo\system\BaseModel.php(1088): CodeIgniter\BaseModel->findAll(5, 0)
+#7 C:\laragon\www\adminComputo\app\Controllers\CentroComputoController.php(26): CodeIgniter\BaseModel->paginate(5, 'default', 1)
+#8 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\CentroComputoController->index()
+#9 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CentroComputoController))
+#10 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-06-15 12:13:32 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM `tbl_centro_computo`
+ LIMIT 5' at line 2
+CRITICAL - 2022-06-15 12:13:32 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM `tbl_centro_computo`
+ LIMIT 5' at line 2
+#0 C:\laragon\www\adminComputo\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT C.id, C....', 0)
+#1 C:\laragon\www\adminComputo\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT C.id, C....')
+#2 C:\laragon\www\adminComputo\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT C.id, C....')
+#3 C:\laragon\www\adminComputo\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT C.id, C....', Array, false)
+#4 C:\laragon\www\adminComputo\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\adminComputo\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(5, 0)
+#6 C:\laragon\www\adminComputo\system\BaseModel.php(1088): CodeIgniter\BaseModel->findAll(5, 0)
+#7 C:\laragon\www\adminComputo\app\Controllers\CentroComputoController.php(26): CodeIgniter\BaseModel->paginate(5, 'default', 1)
+#8 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\CentroComputoController->index()
+#9 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CentroComputoController))
+#10 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-06-15 12:20:51 --> Trying to access array offset on value of type null
+#0 C:\laragon\www\adminComputo\app\Views\centrocomputo\index.php(191): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\laragon\\www\\...', 191, Array)
+#1 C:\laragon\www\adminComputo\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\adminComputo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\adminComputo\system\Common.php(1089): CodeIgniter\View\View->render('centrocomputo/i...', Array, true)
+#4 C:\laragon\www\adminComputo\app\Controllers\CentroComputoController.php(38): view('centrocomputo/i...', Array)
+#5 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\CentroComputoController->index()
+#6 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CentroComputoController))
+#7 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-15 12:21:19 --> Trying to access array offset on value of type null
+#0 C:\laragon\www\adminComputo\app\Views\centrocomputo\index.php(191): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\laragon\\www\\...', 191, Array)
+#1 C:\laragon\www\adminComputo\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\adminComputo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\adminComputo\system\Common.php(1089): CodeIgniter\View\View->render('centrocomputo/i...', Array, true)
+#4 C:\laragon\www\adminComputo\app\Controllers\CentroComputoController.php(38): view('centrocomputo/i...', Array)
+#5 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\CentroComputoController->index()
+#6 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CentroComputoController))
+#7 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-15 12:25:33 --> Cannot use object of type mysqli as array
+#0 C:\laragon\www\adminComputo\system\View\View.php(210): include()
+#1 C:\laragon\www\adminComputo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\laragon\www\adminComputo\system\Common.php(1089): CodeIgniter\View\View->render('centrocomputo/i...', Array, true)
+#3 C:\laragon\www\adminComputo\app\Controllers\CentroComputoController.php(38): view('centrocomputo/i...', Array)
+#4 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\CentroComputoController->index()
+#5 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CentroComputoController))
+#6 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-15 12:25:53 --> Cannot use object of type mysqli as array
+#0 C:\laragon\www\adminComputo\system\View\View.php(210): include()
+#1 C:\laragon\www\adminComputo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\laragon\www\adminComputo\system\Common.php(1089): CodeIgniter\View\View->render('centrocomputo/i...', Array, true)
+#3 C:\laragon\www\adminComputo\app\Controllers\CentroComputoController.php(38): view('centrocomputo/i...', Array)
+#4 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\CentroComputoController->index()
+#5 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CentroComputoController))
+#6 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-15 12:25:56 --> Cannot use object of type mysqli as array
+#0 C:\laragon\www\adminComputo\system\View\View.php(210): include()
+#1 C:\laragon\www\adminComputo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\laragon\www\adminComputo\system\Common.php(1089): CodeIgniter\View\View->render('centrocomputo/i...', Array, true)
+#3 C:\laragon\www\adminComputo\app\Controllers\CentroComputoController.php(38): view('centrocomputo/i...', Array)
+#4 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\CentroComputoController->index()
+#5 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CentroComputoController))
+#6 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-15 12:26:21 --> Call to undefined method app\Models\CentroComputoModel::getResult
+#0 C:\laragon\www\adminComputo\app\Controllers\CentroComputoController.php(24): CodeIgniter\Model->__call('getResult', Array)
+#1 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\CentroComputoController->index()
+#2 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CentroComputoController))
+#3 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-06-15 12:27:31 --> Unknown column 'E.id' in 'on clause'
+CRITICAL - 2022-06-15 12:27:31 --> Unknown column 'E.id' in 'on clause'
+#0 C:\laragon\www\adminComputo\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\laragon\www\adminComputo\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\laragon\www\adminComputo\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\laragon\www\adminComputo\system\Database\BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\laragon\www\adminComputo\system\Model.php(509): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\laragon\www\adminComputo\system\BaseModel.php(1084): CodeIgniter\Model->countAllResults(false)
+#6 C:\laragon\www\adminComputo\app\Controllers\CentroComputoController.php(24): CodeIgniter\BaseModel->paginate(5, 'default', 1)
+#7 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\CentroComputoController->index()
+#8 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CentroComputoController))
+#9 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-06-15 12:48:18 --> Undefined index: estado
+#0 C:\laragon\www\adminComputo\app\Views\centrocomputo\index.php(194): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\laragon\\www\\...', 194, Array)
+#1 C:\laragon\www\adminComputo\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\adminComputo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\adminComputo\system\Common.php(1089): CodeIgniter\View\View->render('centrocomputo/i...', Array, true)
+#4 C:\laragon\www\adminComputo\app\Controllers\CentroComputoController.php(38): view('centrocomputo/i...', Array)
+#5 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\CentroComputoController->index()
+#6 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CentroComputoController))
+#7 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-15 12:53:10 --> Call to a member function paginate() on array
+#0 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\CentroComputoController->index()
+#1 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CentroComputoController))
+#2 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-06-15 12:53:29 --> Call to a member function paginate() on array
+#0 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\CentroComputoController->index()
+#1 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CentroComputoController))
+#2 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-06-15 13:04:22 --> Call to a member function paginate() on array
+#0 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\CentroComputoController->index()
+#1 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CentroComputoController))
+#2 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2022-06-15 13:14:04 --> Unknown column 'CALL' in 'field list'
+CRITICAL - 2022-06-15 13:14:05 --> Unknown column 'CALL' in 'field list'
+#0 C:\laragon\www\adminComputo\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `CALL` `...', 0)
+#1 C:\laragon\www\adminComputo\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `CALL` `...')
+#2 C:\laragon\www\adminComputo\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `CALL` `...')
+#3 C:\laragon\www\adminComputo\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT `CALL` `...', Array, false)
+#4 C:\laragon\www\adminComputo\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\adminComputo\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(5, 0)
+#6 C:\laragon\www\adminComputo\system\BaseModel.php(1088): CodeIgniter\BaseModel->findAll(5, 0)
+#7 C:\laragon\www\adminComputo\app\Controllers\CentroComputoController.php(23): CodeIgniter\BaseModel->paginate(5, 'default', 1)
+#8 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\CentroComputoController->index()
+#9 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CentroComputoController))
+#10 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-06-15 13:16:02 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'CALL sp_ListaCentroComputo()
+FROM `tbl_centro_computo`
+ LIMIT 5' at line 1
+CRITICAL - 2022-06-15 13:16:03 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'CALL sp_ListaCentroComputo()
+FROM `tbl_centro_computo`
+ LIMIT 5' at line 1
+#0 C:\laragon\www\adminComputo\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT CALL sp_...', 0)
+#1 C:\laragon\www\adminComputo\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT CALL sp_...')
+#2 C:\laragon\www\adminComputo\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT CALL sp_...')
+#3 C:\laragon\www\adminComputo\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT CALL sp_...', Array, false)
+#4 C:\laragon\www\adminComputo\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\adminComputo\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(5, 0)
+#6 C:\laragon\www\adminComputo\system\BaseModel.php(1088): CodeIgniter\BaseModel->findAll(5, 0)
+#7 C:\laragon\www\adminComputo\app\Controllers\CentroComputoController.php(23): CodeIgniter\BaseModel->paginate(5, 'default', 1)
+#8 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\CentroComputoController->index()
+#9 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CentroComputoController))
+#10 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-06-15 13:16:36 --> Argument 1 passed to CodeIgniter\BaseModel::findAll() must be of the type int, string given, called in C:\laragon\www\adminComputo\app\Controllers\CentroComputoController.php on line 21
+#0 C:\laragon\www\adminComputo\app\Controllers\CentroComputoController.php(21): CodeIgniter\BaseModel->findAll('CALL sp_ListaCe...')
+#1 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\CentroComputoController->index()
+#2 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CentroComputoController))
+#3 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-15 13:21:55 --> Undefined index: estado
+#0 C:\laragon\www\adminComputo\app\Views\centrocomputo\index.php(194): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\laragon\\www\\...', 194, Array)
+#1 C:\laragon\www\adminComputo\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\adminComputo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\adminComputo\system\Common.php(1089): CodeIgniter\View\View->render('centrocomputo/i...', Array, true)
+#4 C:\laragon\www\adminComputo\app\Controllers\CentroComputoController.php(35): view('centrocomputo/i...', Array)
+#5 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\CentroComputoController->index()
+#6 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CentroComputoController))
+#7 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-15 14:01:28 --> Cannot use object of type mysqli as array
+#0 C:\laragon\www\adminComputo\system\View\View.php(210): include()
+#1 C:\laragon\www\adminComputo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\laragon\www\adminComputo\system\Common.php(1089): CodeIgniter\View\View->render('centrocomputo/i...', Array, true)
+#3 C:\laragon\www\adminComputo\app\Controllers\CentroComputoController.php(28): view('centrocomputo/i...', Array)
+#4 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\CentroComputoController->index()
+#5 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CentroComputoController))
+#6 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2022-06-15 20:36:32 --> Column 'id' in field list is ambiguous
+CRITICAL - 2022-06-15 20:36:32 --> Column 'id' in field list is ambiguous
+#0 C:\laragon\www\adminComputo\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `id`, `n...', 0)
+#1 C:\laragon\www\adminComputo\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `n...')
+#2 C:\laragon\www\adminComputo\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `n...')
+#3 C:\laragon\www\adminComputo\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `n...', Array, false)
+#4 C:\laragon\www\adminComputo\app\Models\CentroComputoModel.php(30): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\adminComputo\app\Controllers\CentroComputoController.php(21): app\Models\CentroComputoModel->ListaCentroComputo()
+#6 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\CentroComputoController->index()
+#7 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CentroComputoController))
+#8 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-06-15 20:41:51 --> Cannot access protected property CodeIgniter\Database\MySQLi\Builder::$db
+#0 C:\laragon\www\adminComputo\app\Controllers\CentroComputoController.php(21): app\Models\CentroComputoModel->ListaCentroComputo()
+#1 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\CentroComputoController->index()
+#2 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CentroComputoController))
+#3 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-15 20:42:05 --> Cannot access protected property CodeIgniter\Database\MySQLi\Builder::$db
+#0 C:\laragon\www\adminComputo\app\Controllers\CentroComputoController.php(21): app\Models\CentroComputoModel->ListaCentroComputo()
+#1 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\CentroComputoController->index()
+#2 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CentroComputoController))
+#3 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-15 20:45:36 --> Cannot use object of type mysqli as array
+#0 C:\laragon\www\adminComputo\system\View\View.php(210): include()
+#1 C:\laragon\www\adminComputo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\laragon\www\adminComputo\system\Common.php(1089): CodeIgniter\View\View->render('centrocomputo/i...', Array, true)
+#3 C:\laragon\www\adminComputo\app\Controllers\CentroComputoController.php(28): view('centrocomputo/i...', Array)
+#4 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\CentroComputoController->index()
+#5 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CentroComputoController))
+#6 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-15 21:08:10 --> Cannot use object of type stdClass as array
+#0 C:\laragon\www\adminComputo\system\View\View.php(210): include()
+#1 C:\laragon\www\adminComputo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\laragon\www\adminComputo\system\Common.php(1089): CodeIgniter\View\View->render('centrocomputo/i...', Array, true)
+#3 C:\laragon\www\adminComputo\app\Controllers\CentroComputoController.php(28): view('centrocomputo/i...', Array)
+#4 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\CentroComputoController->index()
+#5 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CentroComputoController))
+#6 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-15 21:08:59 --> Cannot use object of type stdClass as array
+#0 C:\laragon\www\adminComputo\system\View\View.php(210): include()
+#1 C:\laragon\www\adminComputo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\laragon\www\adminComputo\system\Common.php(1089): CodeIgniter\View\View->render('centrocomputo/i...', Array, true)
+#3 C:\laragon\www\adminComputo\app\Controllers\CentroComputoController.php(28): view('centrocomputo/i...', Array)
+#4 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\CentroComputoController->index()
+#5 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CentroComputoController))
+#6 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-15 22:46:44 --> Trying to get property 'id' of non-object
+#0 C:\laragon\www\adminComputo\app\Views\centrocomputo\index.php(191): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\laragon\\www\\...', 191, Array)
+#1 C:\laragon\www\adminComputo\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\adminComputo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\adminComputo\system\Common.php(1089): CodeIgniter\View\View->render('centrocomputo/i...', Array, true)
+#4 C:\laragon\www\adminComputo\app\Controllers\CentroComputoController.php(28): view('centrocomputo/i...', Array)
+#5 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\CentroComputoController->index()
+#6 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CentroComputoController))
+#7 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-06-15 22:47:07 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'CALL sp_ListaCentroComputo()
+FROM `tbl_centro_computo`
+ LIMIT 5' at line 1
+CRITICAL - 2022-06-15 22:47:08 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'CALL sp_ListaCentroComputo()
+FROM `tbl_centro_computo`
+ LIMIT 5' at line 1
+#0 C:\laragon\www\adminComputo\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT CALL sp_...', 0)
+#1 C:\laragon\www\adminComputo\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT CALL sp_...')
+#2 C:\laragon\www\adminComputo\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT CALL sp_...')
+#3 C:\laragon\www\adminComputo\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT CALL sp_...', Array, false)
+#4 C:\laragon\www\adminComputo\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\adminComputo\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(5, 0)
+#6 C:\laragon\www\adminComputo\system\BaseModel.php(1088): CodeIgniter\BaseModel->findAll(5, 0)
+#7 C:\laragon\www\adminComputo\app\Controllers\CentroComputoController.php(21): CodeIgniter\BaseModel->paginate(5, 'default', 1)
+#8 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\CentroComputoController->index()
+#9 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CentroComputoController))
+#10 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-06-15 22:47:35 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'CALL sp_ListaCentroComputo()
+FROM `tbl_centro_computo`
+ LIMIT 6' at line 1
+CRITICAL - 2022-06-15 22:47:35 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'CALL sp_ListaCentroComputo()
+FROM `tbl_centro_computo`
+ LIMIT 6' at line 1
+#0 C:\laragon\www\adminComputo\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT CALL sp_...', 0)
+#1 C:\laragon\www\adminComputo\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT CALL sp_...')
+#2 C:\laragon\www\adminComputo\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT CALL sp_...')
+#3 C:\laragon\www\adminComputo\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT CALL sp_...', Array, false)
+#4 C:\laragon\www\adminComputo\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\adminComputo\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(6, 0)
+#6 C:\laragon\www\adminComputo\system\BaseModel.php(1088): CodeIgniter\BaseModel->findAll(6, 0)
+#7 C:\laragon\www\adminComputo\app\Controllers\CentroComputoController.php(21): CodeIgniter\BaseModel->paginate(6, 'default', 1)
+#8 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\CentroComputoController->index()
+#9 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CentroComputoController))
+#10 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-06-15 22:47:39 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'CALL sp_ListaCentroComputo()
+FROM `tbl_centro_computo`
+ LIMIT 5' at line 1
+CRITICAL - 2022-06-15 22:47:40 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'CALL sp_ListaCentroComputo()
+FROM `tbl_centro_computo`
+ LIMIT 5' at line 1
+#0 C:\laragon\www\adminComputo\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT CALL sp_...', 0)
+#1 C:\laragon\www\adminComputo\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT CALL sp_...')
+#2 C:\laragon\www\adminComputo\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT CALL sp_...')
+#3 C:\laragon\www\adminComputo\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT CALL sp_...', Array, false)
+#4 C:\laragon\www\adminComputo\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\adminComputo\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(5, 0)
+#6 C:\laragon\www\adminComputo\system\BaseModel.php(1088): CodeIgniter\BaseModel->findAll(5, 0)
+#7 C:\laragon\www\adminComputo\app\Controllers\CentroComputoController.php(21): CodeIgniter\BaseModel->paginate(5, 'default', 1)
+#8 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\CentroComputoController->index()
+#9 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CentroComputoController))
+#10 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-06-15 22:50:31 --> Trying to get property 'id' of non-object
+#0 C:\laragon\www\adminComputo\app\Views\centrocomputo\index.php(191): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\laragon\\www\\...', 191, Array)
+#1 C:\laragon\www\adminComputo\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\adminComputo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\adminComputo\system\Common.php(1089): CodeIgniter\View\View->render('centrocomputo/i...', Array, true)
+#4 C:\laragon\www\adminComputo\app\Controllers\CentroComputoController.php(28): view('centrocomputo/i...', Array)
+#5 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\CentroComputoController->index()
+#6 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CentroComputoController))
+#7 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-15 23:03:20 --> Cannot access protected property CodeIgniter\Database\MySQLi\Builder::$db
+#0 C:\laragon\www\adminComputo\app\Controllers\CentroComputoController.php(21): app\Models\CentroComputoModel->ListaCentroComputo()
+#1 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\CentroComputoController->index()
+#2 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CentroComputoController))
+#3 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-15 23:06:23 --> Array to string conversion
+#0 C:\laragon\www\adminComputo\app\Controllers\CentroComputoController.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\laragon\\www\\...', 22, Array)
+#1 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\CentroComputoController->index()
+#2 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CentroComputoController))
+#3 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-15 23:06:53 --> Array to string conversion
+#0 C:\laragon\www\adminComputo\app\Controllers\CentroComputoController.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\laragon\\www\\...', 22, Array)
+#1 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\CentroComputoController->index()
+#2 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CentroComputoController))
+#3 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-15 23:08:16 --> Array to string conversion
+#0 C:\laragon\www\adminComputo\app\Controllers\CentroComputoController.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\laragon\\www\\...', 22, Array)
+#1 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\CentroComputoController->index()
+#2 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CentroComputoController))
+#3 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-06-15 23:26:08 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'CALL sp_ListaCentroComputo()
+FROM `tbl_centro_computo`
+ LIMIT 5' at line 1
+CRITICAL - 2022-06-15 23:26:08 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'CALL sp_ListaCentroComputo()
+FROM `tbl_centro_computo`
+ LIMIT 5' at line 1
+#0 C:\laragon\www\adminComputo\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT CALL sp_...', 0)
+#1 C:\laragon\www\adminComputo\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT CALL sp_...')
+#2 C:\laragon\www\adminComputo\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT CALL sp_...')
+#3 C:\laragon\www\adminComputo\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT CALL sp_...', Array, false)
+#4 C:\laragon\www\adminComputo\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\adminComputo\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(5, 0)
+#6 C:\laragon\www\adminComputo\system\BaseModel.php(1088): CodeIgniter\BaseModel->findAll(5, 0)
+#7 C:\laragon\www\adminComputo\app\Controllers\CentroComputoController.php(21): CodeIgniter\BaseModel->paginate(5, 'default', 1)
+#8 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\CentroComputoController->index()
+#9 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CentroComputoController))
+#10 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-06-15 23:26:28 --> Trying to get property 'id' of non-object
+#0 C:\laragon\www\adminComputo\app\Views\centrocomputo\index.php(191): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\laragon\\www\\...', 191, Array)
+#1 C:\laragon\www\adminComputo\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\adminComputo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\adminComputo\system\Common.php(1089): CodeIgniter\View\View->render('centrocomputo/i...', Array, true)
+#4 C:\laragon\www\adminComputo\app\Controllers\CentroComputoController.php(28): view('centrocomputo/i...', Array)
+#5 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\CentroComputoController->index()
+#6 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CentroComputoController))
+#7 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-15 23:26:50 --> Trying to access array offset on value of type null
+#0 C:\laragon\www\adminComputo\app\Views\centrocomputo\index.php(191): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\laragon\\www\\...', 191, Array)
+#1 C:\laragon\www\adminComputo\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\adminComputo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\adminComputo\system\Common.php(1089): CodeIgniter\View\View->render('centrocomputo/i...', Array, true)
+#4 C:\laragon\www\adminComputo\app\Controllers\CentroComputoController.php(28): view('centrocomputo/i...', Array)
+#5 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\CentroComputoController->index()
+#6 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CentroComputoController))
+#7 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-15 23:28:12 --> Undefined property: App\Controllers\CentroComputoController::$db
+#0 C:\laragon\www\adminComputo\app\Controllers\CentroComputoController.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\laragon\\www\\...', 20, Array)
+#1 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\CentroComputoController->index()
+#2 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CentroComputoController))
+#3 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-15 23:36:27 --> Cannot use object of type stdClass as array
+#0 C:\laragon\www\adminComputo\system\View\View.php(210): include()
+#1 C:\laragon\www\adminComputo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\laragon\www\adminComputo\system\Common.php(1089): CodeIgniter\View\View->render('centrocomputo/i...', Array, true)
+#3 C:\laragon\www\adminComputo\app\Controllers\CentroComputoController.php(28): view('centrocomputo/i...', Array)
+#4 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\CentroComputoController->index()
+#5 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CentroComputoController))
+#6 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-15 23:59:57 --> Trying to get property 'id' of non-object
+#0 C:\laragon\www\adminComputo\app\Views\centrocomputo\index.php(191): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\laragon\\www\\...', 191, Array)
+#1 C:\laragon\www\adminComputo\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\adminComputo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\adminComputo\system\Common.php(1089): CodeIgniter\View\View->render('centrocomputo/i...', Array, true)
+#4 C:\laragon\www\adminComputo\app\Controllers\CentroComputoController.php(28): view('centrocomputo/i...', Array)
+#5 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\CentroComputoController->index()
+#6 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CentroComputoController))
+#7 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}

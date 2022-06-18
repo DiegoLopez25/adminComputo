@@ -1,0 +1,113 @@
+CRITICAL - 2022-06-17 16:46:35 --> Invalid argument supplied for foreach()
+#0 C:\laragon\www\adminComputo\app\Views\centrocomputo\addEdit.php(189): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\laragon\\www\\...', 189, Array)
+#1 C:\laragon\www\adminComputo\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\adminComputo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\adminComputo\system\Common.php(1089): CodeIgniter\View\View->render('centrocomputo/a...', Array, true)
+#4 C:\laragon\www\adminComputo\app\Controllers\CentroComputoController.php(60): view('centrocomputo/a...', Array)
+#5 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\CentroComputoController->addEdit('1')
+#6 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CentroComputoController))
+#7 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-06-17 16:50:19 --> Incorrect number of arguments for PROCEDURE admincomputo.sp_Estado; expected 1, got 0
+CRITICAL - 2022-06-17 16:50:20 --> Call to a member function getResult() on bool
+#0 C:\laragon\www\adminComputo\app\Controllers\CentroComputoController.php(44): app\Models\CentroComputoModel->estado(NULL)
+#1 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\CentroComputoController->addEdit('1')
+#2 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CentroComputoController))
+#3 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-06-17 16:50:21 --> Incorrect number of arguments for PROCEDURE admincomputo.sp_Estado; expected 1, got 0
+CRITICAL - 2022-06-17 16:50:22 --> Call to a member function getResult() on bool
+#0 C:\laragon\www\adminComputo\app\Controllers\CentroComputoController.php(44): app\Models\CentroComputoModel->estado(NULL)
+#1 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\CentroComputoController->addEdit('1')
+#2 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CentroComputoController))
+#3 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-17 16:50:53 --> Trying to get property 'id_estado' of non-object
+#0 C:\laragon\www\adminComputo\app\Controllers\CentroComputoController.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\laragon\\www\\...', 44, Array)
+#1 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\CentroComputoController->addEdit('1')
+#2 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CentroComputoController))
+#3 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-17 22:32:23 --> Undefined variable: std
+#0 C:\laragon\www\adminComputo\app\Controllers\CentroComputoController.php(59): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 59, Array)
+#1 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\CentroComputoController->addEdit('0')
+#2 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CentroComputoController))
+#3 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-17 22:34:42 --> Undefined variable: std
+#0 C:\laragon\www\adminComputo\app\Controllers\CentroComputoController.php(59): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 59, Array)
+#1 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\CentroComputoController->addEdit('0')
+#2 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CentroComputoController))
+#3 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-17 22:37:42 --> Undefined variable: std
+#0 C:\laragon\www\adminComputo\app\Controllers\CentroComputoController.php(59): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 59, Array)
+#1 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\CentroComputoController->addEdit('0')
+#2 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CentroComputoController))
+#3 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-17 22:37:43 --> Undefined variable: std
+#0 C:\laragon\www\adminComputo\app\Controllers\CentroComputoController.php(59): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 59, Array)
+#1 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\CentroComputoController->addEdit('0')
+#2 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CentroComputoController))
+#3 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-17 22:38:08 --> Undefined variable: std
+#0 C:\laragon\www\adminComputo\app\Controllers\CentroComputoController.php(58): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 58, Array)
+#1 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\CentroComputoController->addEdit('0')
+#2 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CentroComputoController))
+#3 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-17 22:45:20 --> Undefined variable: std
+#0 C:\laragon\www\adminComputo\app\Views\centrocomputo\addEdit.php(189): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 189, Array)
+#1 C:\laragon\www\adminComputo\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\adminComputo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\adminComputo\system\Common.php(1089): CodeIgniter\View\View->render('centrocomputo/a...', Array, true)
+#4 C:\laragon\www\adminComputo\app\Controllers\CentroComputoController.php(62): view('centrocomputo/a...', Array)
+#5 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\CentroComputoController->addEdit('1')
+#6 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CentroComputoController))
+#7 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-17 22:47:24 --> Undefined variable: std
+#0 C:\laragon\www\adminComputo\app\Views\centrocomputo\addEdit.php(189): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 189, Array)
+#1 C:\laragon\www\adminComputo\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\adminComputo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\adminComputo\system\Common.php(1089): CodeIgniter\View\View->render('centrocomputo/a...', Array, true)
+#4 C:\laragon\www\adminComputo\app\Controllers\CentroComputoController.php(62): view('centrocomputo/a...', Array)
+#5 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\CentroComputoController->addEdit('1')
+#6 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CentroComputoController))
+#7 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-17 22:48:28 --> Undefined variable: std
+#0 C:\laragon\www\adminComputo\app\Views\centrocomputo\addEdit.php(186): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 186, Array)
+#1 C:\laragon\www\adminComputo\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\adminComputo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\adminComputo\system\Common.php(1089): CodeIgniter\View\View->render('centrocomputo/a...', Array, true)
+#4 C:\laragon\www\adminComputo\app\Controllers\CentroComputoController.php(62): view('centrocomputo/a...', Array)
+#5 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\CentroComputoController->addEdit('1')
+#6 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CentroComputoController))
+#7 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-17 22:50:29 --> Undefined variable: std
+#0 C:\laragon\www\adminComputo\app\Views\centrocomputo\addEdit.php(186): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 186, Array)
+#1 C:\laragon\www\adminComputo\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\adminComputo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\adminComputo\system\Common.php(1089): CodeIgniter\View\View->render('centrocomputo/a...', Array, true)
+#4 C:\laragon\www\adminComputo\app\Controllers\CentroComputoController.php(62): view('centrocomputo/a...', Array)
+#5 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\CentroComputoController->addEdit('1')
+#6 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CentroComputoController))
+#7 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}

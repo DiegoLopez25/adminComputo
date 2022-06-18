@@ -37,6 +37,8 @@ $routes->post('/dashboard', 'Dashboard::iniciarSesion');
 $routes->get('/dashboard', 'Dashboard::index',['filter'=>'pruebaFiltro']);
 $routes->get('/dashboard/cerrar','Dashboard::cerrarSesion');
 $routes->get('/centro-computo','CentroComputoController::index');
+$routes->get('/centro-computo/addEdit/(:num)','CentroComputoController::addEdit/$1');
+$routes->post('/centro-computo/addEdit/(:num)','CentroComputoController::addEdit/$1');
 $routes->get('/usuario','UsuarioController::index');
 $routes->get('/dispositivo','DispositivoController::index');
 $routes->get('/tipo-incidente','TipoIncidenteController::index');

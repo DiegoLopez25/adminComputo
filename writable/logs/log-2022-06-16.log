@@ -1,0 +1,76 @@
+ERROR - 2022-06-16 00:06:44 --> Not unique table/alias: 'tbl_centro_computo'
+CRITICAL - 2022-06-16 00:06:44 --> Not unique table/alias: 'tbl_centro_computo'
+#0 C:\laragon\www\adminComputo\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\laragon\www\adminComputo\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\laragon\www\adminComputo\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\laragon\www\adminComputo\system\Database\BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\laragon\www\adminComputo\system\Model.php(509): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\laragon\www\adminComputo\system\BaseModel.php(1084): CodeIgniter\Model->countAllResults(false)
+#6 C:\laragon\www\adminComputo\app\Controllers\CentroComputoController.php(22): CodeIgniter\BaseModel->paginate(5, 'default', 1)
+#7 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\CentroComputoController->index()
+#8 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CentroComputoController))
+#9 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-06-16 00:15:51 --> Not unique table/alias: 'tbl_centro_computo'
+CRITICAL - 2022-06-16 00:15:51 --> Not unique table/alias: 'tbl_centro_computo'
+#0 C:\laragon\www\adminComputo\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\laragon\www\adminComputo\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\laragon\www\adminComputo\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\laragon\www\adminComputo\system\Database\BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\laragon\www\adminComputo\system\Model.php(509): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\laragon\www\adminComputo\system\BaseModel.php(1084): CodeIgniter\Model->countAllResults(false)
+#6 C:\laragon\www\adminComputo\app\Controllers\CentroComputoController.php(22): CodeIgniter\BaseModel->paginate(5, 'default', 1)
+#7 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\CentroComputoController->index()
+#8 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CentroComputoController))
+#9 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-06-16 00:40:05 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'CAll sp_ListaCentroComputo()
+FROM `tbl_centro_computo`
+ LIMIT 5' at line 1
+CRITICAL - 2022-06-16 00:40:05 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'CAll sp_ListaCentroComputo()
+FROM `tbl_centro_computo`
+ LIMIT 5' at line 1
+#0 C:\laragon\www\adminComputo\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT CAll sp_...', 0)
+#1 C:\laragon\www\adminComputo\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT CAll sp_...')
+#2 C:\laragon\www\adminComputo\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT CAll sp_...')
+#3 C:\laragon\www\adminComputo\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT CAll sp_...', Array, false)
+#4 C:\laragon\www\adminComputo\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\adminComputo\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(5, 0)
+#6 C:\laragon\www\adminComputo\system\BaseModel.php(1088): CodeIgniter\BaseModel->findAll(5, 0)
+#7 C:\laragon\www\adminComputo\app\Controllers\CentroComputoController.php(22): CodeIgniter\BaseModel->paginate(5, 'default', 1)
+#8 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\CentroComputoController->index()
+#9 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CentroComputoController))
+#10 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-06-16 01:39:42 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'CAll sp_ListaCentroComputo()
+FROM `tbl_centro_computo`
+ LIMIT 5' at line 1
+CRITICAL - 2022-06-16 01:39:43 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'CAll sp_ListaCentroComputo()
+FROM `tbl_centro_computo`
+ LIMIT 5' at line 1
+#0 C:\laragon\www\adminComputo\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT CAll sp_...', 0)
+#1 C:\laragon\www\adminComputo\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT CAll sp_...')
+#2 C:\laragon\www\adminComputo\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT CAll sp_...')
+#3 C:\laragon\www\adminComputo\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT CAll sp_...', Array, false)
+#4 C:\laragon\www\adminComputo\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\adminComputo\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(5, 0)
+#6 C:\laragon\www\adminComputo\system\BaseModel.php(1088): CodeIgniter\BaseModel->findAll(5, 0)
+#7 C:\laragon\www\adminComputo\app\Controllers\CentroComputoController.php(22): CodeIgniter\BaseModel->paginate(5, 'default', 1)
+#8 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\CentroComputoController->index()
+#9 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CentroComputoController))
+#10 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-06-16 01:40:16 --> Cannot use object of type stdClass as array
+#0 C:\laragon\www\adminComputo\system\View\View.php(210): include()
+#1 C:\laragon\www\adminComputo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\laragon\www\adminComputo\system\Common.php(1089): CodeIgniter\View\View->render('centrocomputo/i...', Array, true)
+#3 C:\laragon\www\adminComputo\app\Controllers\CentroComputoController.php(28): view('centrocomputo/i...', Array)
+#4 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\CentroComputoController->index()
+#5 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CentroComputoController))
+#6 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
