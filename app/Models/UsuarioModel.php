@@ -11,7 +11,7 @@ class UsuarioModel extends Model
 
     protected $returnType     = "array";
 
-    protected $allowedFields = ["nombre", "apellido", "email", "dui","usuario","password"];
+    protected $allowedFields = ["nombre", "apellido", "email", "dui","usuario","password","id_estado","id_rol"];
 
     protected $useTimestamps = false;
 
@@ -21,4 +21,14 @@ class UsuarioModel extends Model
 
     ];
     protected $skipValidation = false;
+
+    public function ListaUsuarios(){
+        return $this->db->query("CALL sp_ListaUsuarios()")->getResult();
+    }
+    public function estado($id){
+        return $this->db->query("CALL sp_Estado(".$id.")")->getResult();
+    }
+    public function rol($id){
+        return $this->db->query("CALL sp_Rol(".$id.")")->getResult();
+    }
 }

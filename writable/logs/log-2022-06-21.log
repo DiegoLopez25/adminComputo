@@ -1,0 +1,42 @@
+CRITICAL - 2022-06-21 11:19:15 --> Typed property App\Controllers\IncidenteController::$model must be an instance of app\Models\IncidenteModel, app\Models\UsuarioModel used
+#0 C:\laragon\www\adminComputo\system\CodeIgniter.php(809): App\Controllers\IncidenteController->__construct()
+#1 C:\laragon\www\adminComputo\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#2 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-06-21 21:02:52 --> Typed property App\Controllers\IncidenteController::$model must be an instance of app\Models\IncidenteModel, app\Models\UsuarioModel used
+#0 C:\laragon\www\adminComputo\system\CodeIgniter.php(809): App\Controllers\IncidenteController->__construct()
+#1 C:\laragon\www\adminComputo\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#2 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-06-21 21:03:33 --> Typed property App\Controllers\IncidenteController::$model must be an instance of app\Models\IncidenteModel, app\Models\UsuarioModel used
+#0 C:\laragon\www\adminComputo\system\CodeIgniter.php(809): App\Controllers\IncidenteController->__construct()
+#1 C:\laragon\www\adminComputo\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#2 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-06-21 21:04:02 --> Class 'app\Models\IncidenteModel' not found
+#0 C:\laragon\www\adminComputo\system\CodeIgniter.php(809): App\Controllers\IncidenteController->__construct()
+#1 C:\laragon\www\adminComputo\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#2 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-06-21 21:04:53 --> Class 'app\Models\IncidenteModel' not found
+#0 C:\laragon\www\adminComputo\system\CodeIgniter.php(809): App\Controllers\IncidenteController->__construct()
+#1 C:\laragon\www\adminComputo\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#2 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-06-21 21:06:46 --> Class 'app\Models\IncidenteModel' not found
+#0 C:\laragon\www\adminComputo\system\CodeIgniter.php(809): App\Controllers\IncidenteController->__construct()
+#1 C:\laragon\www\adminComputo\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#2 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-06-21 21:06:53 --> Class 'app\Models\IncidenteModel' not found
+#0 C:\laragon\www\adminComputo\system\CodeIgniter.php(809): App\Controllers\IncidenteController->__construct()
+#1 C:\laragon\www\adminComputo\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#2 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}

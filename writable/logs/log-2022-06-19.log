@@ -1,0 +1,361 @@
+CRITICAL - 2022-06-19 00:00:43 --> Undefined variable: centroComputo
+#0 C:\laragon\www\adminComputo\app\Controllers\DispositivoController.php(57): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 57, Array)
+#1 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\DispositivoController->addEdit('0')
+#2 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DispositivoController))
+#3 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-19 00:04:13 --> Undefined index: id_centro_computo
+#0 C:\laragon\www\adminComputo\app\Views\dispositivo\addEdit.php(216): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\laragon\\www\\...', 216, Array)
+#1 C:\laragon\www\adminComputo\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\adminComputo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\adminComputo\system\Common.php(1089): CodeIgniter\View\View->render('dispositivo/add...', Array, true)
+#4 C:\laragon\www\adminComputo\app\Controllers\DispositivoController.php(66): view('dispositivo/add...', Array)
+#5 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\DispositivoController->addEdit('0')
+#6 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DispositivoController))
+#7 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-19 00:07:48 --> Undefined index: id_centro_computo
+#0 C:\laragon\www\adminComputo\app\Views\dispositivo\addEdit.php(216): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\laragon\\www\\...', 216, Array)
+#1 C:\laragon\www\adminComputo\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\adminComputo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\adminComputo\system\Common.php(1089): CodeIgniter\View\View->render('dispositivo/add...', Array, true)
+#4 C:\laragon\www\adminComputo\app\Controllers\DispositivoController.php(68): view('dispositivo/add...', Array)
+#5 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\DispositivoController->addEdit('0')
+#6 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DispositivoController))
+#7 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-19 00:11:21 --> Undefined variable: centroComputos
+#0 C:\laragon\www\adminComputo\app\Views\dispositivo\addEdit.php(231): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 231, Array)
+#1 C:\laragon\www\adminComputo\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\adminComputo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\adminComputo\system\Common.php(1089): CodeIgniter\View\View->render('dispositivo/add...', Array, true)
+#4 C:\laragon\www\adminComputo\app\Controllers\DispositivoController.php(68): view('dispositivo/add...', Array)
+#5 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\DispositivoController->addEdit('0')
+#6 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DispositivoController))
+#7 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-19 00:13:08 --> Undefined index: id
+#0 C:\laragon\www\adminComputo\app\Views\dispositivo\addEdit.php(232): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\laragon\\www\\...', 232, Array)
+#1 C:\laragon\www\adminComputo\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\adminComputo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\adminComputo\system\Common.php(1089): CodeIgniter\View\View->render('dispositivo/add...', Array, true)
+#4 C:\laragon\www\adminComputo\app\Controllers\DispositivoController.php(68): view('dispositivo/add...', Array)
+#5 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\DispositivoController->addEdit('0')
+#6 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DispositivoController))
+#7 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-19 00:14:19 --> Trying to get property 'id' of non-object
+#0 C:\laragon\www\adminComputo\app\Views\dispositivo\addEdit.php(232): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\laragon\\www\\...', 232, Array)
+#1 C:\laragon\www\adminComputo\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\adminComputo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\adminComputo\system\Common.php(1089): CodeIgniter\View\View->render('dispositivo/add...', Array, true)
+#4 C:\laragon\www\adminComputo\app\Controllers\DispositivoController.php(68): view('dispositivo/add...', Array)
+#5 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\DispositivoController->addEdit('0')
+#6 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DispositivoController))
+#7 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-19 00:14:27 --> Undefined index: id
+#0 C:\laragon\www\adminComputo\app\Views\dispositivo\addEdit.php(232): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\laragon\\www\\...', 232, Array)
+#1 C:\laragon\www\adminComputo\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\adminComputo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\adminComputo\system\Common.php(1089): CodeIgniter\View\View->render('dispositivo/add...', Array, true)
+#4 C:\laragon\www\adminComputo\app\Controllers\DispositivoController.php(68): view('dispositivo/add...', Array)
+#5 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\DispositivoController->addEdit('0')
+#6 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DispositivoController))
+#7 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-19 00:16:40 --> Undefined index: id_centro_computo
+#0 C:\laragon\www\adminComputo\app\Views\dispositivo\addEdit.php(232): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\laragon\\www\\...', 232, Array)
+#1 C:\laragon\www\adminComputo\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\adminComputo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\adminComputo\system\Common.php(1089): CodeIgniter\View\View->render('dispositivo/add...', Array, true)
+#4 C:\laragon\www\adminComputo\app\Controllers\DispositivoController.php(68): view('dispositivo/add...', Array)
+#5 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\DispositivoController->addEdit('0')
+#6 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DispositivoController))
+#7 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-19 00:20:56 --> Cannot use object of type stdClass as array
+#0 C:\laragon\www\adminComputo\system\View\View.php(210): include()
+#1 C:\laragon\www\adminComputo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\laragon\www\adminComputo\system\Common.php(1089): CodeIgniter\View\View->render('dispositivo/add...', Array, true)
+#3 C:\laragon\www\adminComputo\app\Controllers\DispositivoController.php(68): view('dispositivo/add...', Array)
+#4 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\DispositivoController->addEdit('0')
+#5 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DispositivoController))
+#6 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-19 00:21:17 --> Cannot use object of type stdClass as array
+#0 C:\laragon\www\adminComputo\system\View\View.php(210): include()
+#1 C:\laragon\www\adminComputo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\laragon\www\adminComputo\system\Common.php(1089): CodeIgniter\View\View->render('dispositivo/add...', Array, true)
+#3 C:\laragon\www\adminComputo\app\Controllers\DispositivoController.php(68): view('dispositivo/add...', Array)
+#4 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\DispositivoController->addEdit('0')
+#5 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DispositivoController))
+#6 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-19 00:21:20 --> Cannot use object of type stdClass as array
+#0 C:\laragon\www\adminComputo\system\View\View.php(210): include()
+#1 C:\laragon\www\adminComputo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\laragon\www\adminComputo\system\Common.php(1089): CodeIgniter\View\View->render('dispositivo/add...', Array, true)
+#3 C:\laragon\www\adminComputo\app\Controllers\DispositivoController.php(68): view('dispositivo/add...', Array)
+#4 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\DispositivoController->addEdit('0')
+#5 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DispositivoController))
+#6 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-19 00:21:34 --> Cannot use object of type stdClass as array
+#0 C:\laragon\www\adminComputo\system\View\View.php(210): include()
+#1 C:\laragon\www\adminComputo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\laragon\www\adminComputo\system\Common.php(1089): CodeIgniter\View\View->render('dispositivo/add...', Array, true)
+#3 C:\laragon\www\adminComputo\app\Controllers\DispositivoController.php(68): view('dispositivo/add...', Array)
+#4 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\DispositivoController->addEdit('0')
+#5 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DispositivoController))
+#6 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-19 00:22:57 --> Undefined index: id_centro_computo
+#0 C:\laragon\www\adminComputo\app\Views\dispositivo\addEdit.php(232): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\laragon\\www\\...', 232, Array)
+#1 C:\laragon\www\adminComputo\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\adminComputo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\adminComputo\system\Common.php(1089): CodeIgniter\View\View->render('dispositivo/add...', Array, true)
+#4 C:\laragon\www\adminComputo\app\Controllers\DispositivoController.php(68): view('dispositivo/add...', Array)
+#5 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\DispositivoController->addEdit('0')
+#6 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DispositivoController))
+#7 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-19 00:24:12 --> Undefined index: id_estado
+#0 C:\laragon\www\adminComputo\app\Views\dispositivo\addEdit.php(193): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\laragon\\www\\...', 193, Array)
+#1 C:\laragon\www\adminComputo\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\adminComputo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\adminComputo\system\Common.php(1089): CodeIgniter\View\View->render('dispositivo/add...', Array, true)
+#4 C:\laragon\www\adminComputo\app\Controllers\DispositivoController.php(68): view('dispositivo/add...', Array)
+#5 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\DispositivoController->addEdit('0')
+#6 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DispositivoController))
+#7 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-19 00:24:15 --> Undefined index: id_estado
+#0 C:\laragon\www\adminComputo\app\Views\dispositivo\addEdit.php(193): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\laragon\\www\\...', 193, Array)
+#1 C:\laragon\www\adminComputo\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\adminComputo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\adminComputo\system\Common.php(1089): CodeIgniter\View\View->render('dispositivo/add...', Array, true)
+#4 C:\laragon\www\adminComputo\app\Controllers\DispositivoController.php(68): view('dispositivo/add...', Array)
+#5 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\DispositivoController->addEdit('0')
+#6 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DispositivoController))
+#7 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-19 00:31:37 --> Cannot use object of type stdClass as array
+#0 C:\laragon\www\adminComputo\system\View\View.php(210): include()
+#1 C:\laragon\www\adminComputo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\laragon\www\adminComputo\system\Common.php(1089): CodeIgniter\View\View->render('dispositivo/add...', Array, true)
+#3 C:\laragon\www\adminComputo\app\Controllers\DispositivoController.php(70): view('dispositivo/add...', Array)
+#4 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\DispositivoController->addEdit('1')
+#5 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DispositivoController))
+#6 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-19 00:44:23 --> Cannot use object of type stdClass as array
+#0 C:\laragon\www\adminComputo\system\View\View.php(210): include()
+#1 C:\laragon\www\adminComputo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\laragon\www\adminComputo\system\Common.php(1089): CodeIgniter\View\View->render('dispositivo/add...', Array, true)
+#3 C:\laragon\www\adminComputo\app\Controllers\DispositivoController.php(70): view('dispositivo/add...', Array)
+#4 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\DispositivoController->addEdit('0')
+#5 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DispositivoController))
+#6 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-19 01:02:50 --> Call to undefined method app\Models\DispositivoModel::centros
+#0 C:\laragon\www\adminComputo\app\Controllers\DispositivoController.php(41): CodeIgniter\Model->__call('centros', Array)
+#1 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\DispositivoController->addEdit('0')
+#2 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DispositivoController))
+#3 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-19 01:08:54 --> There is no data to insert.
+#0 C:\laragon\www\adminComputo\system\BaseModel.php(718): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 C:\laragon\www\adminComputo\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#2 C:\laragon\www\adminComputo\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#3 C:\laragon\www\adminComputo\app\Controllers\DispositivoController.php(85): CodeIgniter\BaseModel->save(Array)
+#4 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\DispositivoController->addEdit('0')
+#5 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DispositivoController))
+#6 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-19 01:11:51 --> There is no data to insert.
+#0 C:\laragon\www\adminComputo\system\BaseModel.php(718): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 C:\laragon\www\adminComputo\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#2 C:\laragon\www\adminComputo\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#3 C:\laragon\www\adminComputo\app\Controllers\DispositivoController.php(85): CodeIgniter\BaseModel->save(Array)
+#4 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\DispositivoController->addEdit('0')
+#5 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DispositivoController))
+#6 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-19 02:16:20 --> Trying to get property 'id' of non-object
+#0 C:\laragon\www\adminComputo\app\Views\tipo-incidente\index.php(54): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\laragon\\www\\...', 54, Array)
+#1 C:\laragon\www\adminComputo\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\adminComputo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\adminComputo\system\Common.php(1089): CodeIgniter\View\View->render('tipo-incidente/...', Array, true)
+#4 C:\laragon\www\adminComputo\app\Controllers\TipoIncidenteController.php(22): view('tipo-incidente/...', Array)
+#5 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\TipoIncidenteController->index()
+#6 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TipoIncidenteController))
+#7 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-19 08:53:59 --> Call to undefined method app\Models\UsuarioModel::ListaUsuarios
+#0 C:\laragon\www\adminComputo\app\Controllers\UsuarioController.php(22): CodeIgniter\Model->__call('ListaUsuarios', Array)
+#1 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\UsuarioController->index()
+#2 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#3 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-19 08:54:37 --> Call to undefined method app\Models\UsuarioModel::ListaUsuarios
+#0 C:\laragon\www\adminComputo\app\Controllers\UsuarioController.php(22): CodeIgniter\Model->__call('ListaUsuarios', Array)
+#1 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\UsuarioController->index()
+#2 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#3 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-19 08:55:12 --> Undefined variable: dispositivos
+#0 C:\laragon\www\adminComputo\app\Views\dispositivo\index.php(53): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 53, Array)
+#1 C:\laragon\www\adminComputo\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\adminComputo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\adminComputo\system\Common.php(1089): CodeIgniter\View\View->render('dispositivo/ind...', Array, true)
+#4 C:\laragon\www\adminComputo\app\Controllers\UsuarioController.php(27): view('dispositivo/ind...', Array)
+#5 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\UsuarioController->index()
+#6 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#7 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-19 08:55:41 --> Undefined variable: dispositivos
+#0 C:\laragon\www\adminComputo\app\Views\dispositivo\index.php(53): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 53, Array)
+#1 C:\laragon\www\adminComputo\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\adminComputo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\adminComputo\system\Common.php(1089): CodeIgniter\View\View->render('dispositivo/ind...', Array, true)
+#4 C:\laragon\www\adminComputo\app\Controllers\UsuarioController.php(27): view('dispositivo/ind...', Array)
+#5 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\UsuarioController->index()
+#6 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#7 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-19 08:56:08 --> Undefined property: stdClass::$id
+#0 C:\laragon\www\adminComputo\app\Views\usuario\index.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\laragon\\www\\...', 60, Array)
+#1 C:\laragon\www\adminComputo\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\adminComputo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\adminComputo\system\Common.php(1089): CodeIgniter\View\View->render('usuario/index', Array, true)
+#4 C:\laragon\www\adminComputo\app\Controllers\UsuarioController.php(27): view('usuario/index', Array)
+#5 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\UsuarioController->index()
+#6 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#7 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-19 08:56:35 --> Cannot use object of type stdClass as array
+#0 C:\laragon\www\adminComputo\system\View\View.php(210): include()
+#1 C:\laragon\www\adminComputo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\laragon\www\adminComputo\system\Common.php(1089): CodeIgniter\View\View->render('usuario/index', Array, true)
+#3 C:\laragon\www\adminComputo\app\Controllers\UsuarioController.php(27): view('usuario/index', Array)
+#4 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\UsuarioController->index()
+#5 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#6 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-19 08:56:45 --> Undefined property: stdClass::$id
+#0 C:\laragon\www\adminComputo\app\Views\usuario\index.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\laragon\\www\\...', 60, Array)
+#1 C:\laragon\www\adminComputo\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\adminComputo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\adminComputo\system\Common.php(1089): CodeIgniter\View\View->render('usuario/index', Array, true)
+#4 C:\laragon\www\adminComputo\app\Controllers\UsuarioController.php(27): view('usuario/index', Array)
+#5 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\UsuarioController->index()
+#6 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#7 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-19 08:58:22 --> Undefined variable: d
+#0 C:\laragon\www\adminComputo\app\Views\usuario\index.php(67): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 67, Array)
+#1 C:\laragon\www\adminComputo\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\adminComputo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\adminComputo\system\Common.php(1089): CodeIgniter\View\View->render('usuario/index', Array, true)
+#4 C:\laragon\www\adminComputo\app\Controllers\UsuarioController.php(27): view('usuario/index', Array)
+#5 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\UsuarioController->index()
+#6 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#7 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-19 09:00:26 --> Undefined variable: rol
+#0 C:\laragon\www\adminComputo\app\Controllers\UsuarioController.php(67): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 67, Array)
+#1 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\UsuarioController->addEdit('0')
+#2 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#3 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-19 09:01:19 --> Invalid file: usuario/addEdit.php
+#0 C:\laragon\www\adminComputo\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('usuario/addEdit...')
+#1 C:\laragon\www\adminComputo\system\Common.php(1089): CodeIgniter\View\View->render('usuario/addEdit', Array, true)
+#2 C:\laragon\www\adminComputo\app\Controllers\UsuarioController.php(70): view('usuario/addEdit', Array)
+#3 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\UsuarioController->addEdit('0')
+#4 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#5 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-06-19 09:15:12 --> Undefined variable: dispositivos
+#0 C:\laragon\www\adminComputo\app\Views\usuario\addEdit.php(98): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 98, Array)
+#1 C:\laragon\www\adminComputo\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\adminComputo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\adminComputo\system\Common.php(1089): CodeIgniter\View\View->render('usuario/addEdit', Array, true)
+#4 C:\laragon\www\adminComputo\app\Controllers\UsuarioController.php(70): view('usuario/addEdit', Array)
+#5 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\UsuarioController->addEdit('1')
+#6 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#7 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-19 09:35:40 --> Undefined index: pasword
+#0 C:\laragon\www\adminComputo\app\Views\usuario\addEdit.php(78): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\laragon\\www\\...', 78, Array)
+#1 C:\laragon\www\adminComputo\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\adminComputo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\adminComputo\system\Common.php(1089): CodeIgniter\View\View->render('usuario/addEdit', Array, true)
+#4 C:\laragon\www\adminComputo\app\Controllers\UsuarioController.php(70): view('usuario/addEdit', Array)
+#5 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\UsuarioController->addEdit('3')
+#6 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#7 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-19 09:36:28 --> Undefined index: pasword
+#0 C:\laragon\www\adminComputo\app\Views\usuario\addEdit.php(78): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\laragon\\www\\...', 78, Array)
+#1 C:\laragon\www\adminComputo\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\adminComputo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\adminComputo\system\Common.php(1089): CodeIgniter\View\View->render('usuario/addEdit', Array, true)
+#4 C:\laragon\www\adminComputo\app\Controllers\UsuarioController.php(70): view('usuario/addEdit', Array)
+#5 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\UsuarioController->addEdit('3')
+#6 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#7 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-19 09:36:34 --> Undefined index: pasword
+#0 C:\laragon\www\adminComputo\app\Views\usuario\addEdit.php(78): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\laragon\\www\\...', 78, Array)
+#1 C:\laragon\www\adminComputo\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\adminComputo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\adminComputo\system\Common.php(1089): CodeIgniter\View\View->render('usuario/addEdit', Array, true)
+#4 C:\laragon\www\adminComputo\app\Controllers\UsuarioController.php(70): view('usuario/addEdit', Array)
+#5 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\UsuarioController->addEdit('3')
+#6 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#7 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-19 12:06:43 --> Undefined index: estado
+#0 C:\laragon\www\adminComputo\app\Controllers\UsuarioController.php(87): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\laragon\\www\\...', 87, Array)
+#1 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\UsuarioController->addEdit('3')
+#2 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#3 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

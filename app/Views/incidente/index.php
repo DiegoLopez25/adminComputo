@@ -1,289 +1,284 @@
-<?= $this->extend('templates/admin_template')?>
-<?= $this->section('content')?>
-<!-- Topbar -->
-<nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
-<!-- Sidebar Toggle (Topbar) -->
-<button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
-    <i class="fa fa-bars"></i>
-</button>
+<?= $this->extend('templates/admin_template') ?>
+<?= $this->section('content') ?>
 
-<!-- Topbar Search -->
-<form
-    class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-    <div class="input-group">
-        <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
-            aria-label="Search" aria-describedby="basic-addon2">
-        <div class="input-group-append">
-            <button class="btn btn-primary" type="button">
-                <i class="fas fa-search fa-sm"></i>
-            </button>
-        </div>
-    </div>
-</form>
-
-<!-- Topbar Navbar -->
-<ul class="navbar-nav ml-auto">
-
-    <!-- Nav Item - Search Dropdown (Visible Only XS) -->
-    <li class="nav-item dropdown no-arrow d-sm-none">
-        <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
-            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <i class="fas fa-search fa-fw"></i>
-        </a>
-        <!-- Dropdown - Messages -->
-        <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
-            aria-labelledby="searchDropdown">
-            <form class="form-inline mr-auto w-100 navbar-search">
-                <div class="input-group">
-                    <input type="text" class="form-control bg-light border-0 small"
-                        placeholder="Search for..." aria-label="Search"
-                        aria-describedby="basic-addon2">
-                    <div class="input-group-append">
-                        <button class="btn btn-primary" type="button">
-                            <i class="fas fa-search fa-sm"></i>
-                        </button>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </li>
-
-    <!-- Nav Item - Alerts -->
-    <li class="nav-item dropdown no-arrow mx-1">
-        <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
-            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <i class="fas fa-bell fa-fw"></i>
-            <!-- Counter - Alerts -->
-            <span class="badge badge-danger badge-counter">3+</span>
-        </a>
-        <!-- Dropdown - Alerts -->
-        <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
-            aria-labelledby="alertsDropdown">
-            <h6 class="dropdown-header">
-                Alerts Center
-            </h6>
-            <a class="dropdown-item d-flex align-items-center" href="#">
-                <div class="mr-3">
-                    <div class="icon-circle bg-primary">
-                        <i class="fas fa-file-alt text-white"></i>
-                    </div>
-                </div>
-                <div>
-                    <div class="small text-gray-500">December 12, 2019</div>
-                    <span class="font-weight-bold">A new monthly report is ready to download!</span>
-                </div>
-            </a>
-            <a class="dropdown-item d-flex align-items-center" href="#">
-                <div class="mr-3">
-                    <div class="icon-circle bg-success">
-                        <i class="fas fa-donate text-white"></i>
-                    </div>
-                </div>
-                <div>
-                    <div class="small text-gray-500">December 7, 2019</div>
-                    $290.29 has been deposited into your account!
-                </div>
-            </a>
-            <a class="dropdown-item d-flex align-items-center" href="#">
-                <div class="mr-3">
-                    <div class="icon-circle bg-warning">
-                        <i class="fas fa-exclamation-triangle text-white"></i>
-                    </div>
-                </div>
-                <div>
-                    <div class="small text-gray-500">December 2, 2019</div>
-                    Spending Alert: We've noticed unusually high spending for your account.
-                </div>
-            </a>
-            <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
-        </div>
-    </li>
-
-
-    <div class="topbar-divider d-none d-sm-block"></div>
-
-    <!-- Nav Item - User Information -->
-    <li class="nav-item dropdown no-arrow">
-        <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
-            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <span class="mr-2 d-none d-lg-inline text-gray-600 small"><?= session()->get('nombre')." ".session()->get('apellido');?></span>
-            <img class="img-profile rounded-circle"
-                src="img/undraw_profile.svg">
-        </a>
-        <!-- Dropdown - User Information -->
-        <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
-            aria-labelledby="userDropdown">
-            <a class="dropdown-item" href="#">
-                <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                Profile
-            </a>
-            <a class="dropdown-item" href="#">
-                <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
-                Settings
-            </a>
-            <a class="dropdown-item" href="#">
-                <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
-                Activity Log
-            </a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-                <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                Logout
-            </a>
-        </div>
-    </li>
-
-</ul>
-
-</nav>
-<!-- End of Topbar -->
 
 <!-- Begin Page Content -->
 <div class="container-fluid">
-
+        <?php if (session()->getFlashdata('alert-type')): ?>
+                <div class="col-12 mt-2">
+                    <div class="alert <?= session()->getFlashdata('alert-type'); ?> alert-dismissible">
+                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button>
+                        <h5><i class="icon fas fa-info"></i> <?= session()->getFlashdata('alert-title'); ?></h5>
+                        <?= session()->getFlashdata('alert-message'); ?>
+                    </div>
+                </div>
+                    <?php endif ?>
+                
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between col-sm-12 col-xs-12">
-        <h1 class="h3 text-gray-800 float-left ">Incidentes</h1>
-        <div class="d-none d-sm-inline-block"><a href="<?=site_url('/dashboard')?>">Home</a> / <a href="http://">Lista de incidentes</a></div> 
+        <h1 class="h3 text-gray-800 float-left "><?=$title?></h1>
+        <div class="d-none d-sm-inline-block"><a href="<?= site_url('/dashboard') ?>">Home</a> / <a>Lista <?=$title?></a></div>
     </div>
     <div class="row mb-3 col-sm-12 col-xs-12">
-        <div class="col-md-3 col-sm-12 offset-md-9 ">
-            <a href="#" class="btn btn-success float-right"><i class="fas fa-plus"></i> <span>Nuevo incidente</span></a>
+        <div class="col-md-3 col-sm-12 offset-md-9">
+            <a data-toggle="modal" data-target="#modal-new" class="btn btn-success float-right ml-0"><i class="fas fa-plus"></i> Nuevo <?=$title?></a>
         </div>
     </div>
 
     <div class="row">
-            <div class="col-12">
-                <div class="card shadow">
-                    <div class="card-header"> 
-                        <div class="d-sm-flex align-items-center justify-content-between">
-                            <h4 class="font-weight-bold text-primary">Lista de incidentes</h4>
-                            <div class="d-none d-sm-inline-block">
-                                <div class="input-group input-group-sm" style="width: 225px;">
-                                    <select name="opciones" class="form-control float-left" id="filtro">
-                                        <option selected value="nombre">Nombre</option>
-                                        <option value="dui">dui</option>
-                                    </select>
-                                    <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
-                                    <div class="input-group-append">
-                                        <span class="input-group-text"><i class="fas fa-search"></i></span>
-                                    </div>
-                                </div> 
-                            </div>
-                        </div>
+        <div class="col-sm-12">
+            <div class="card shadow">
+                <div class="card-header">
+                    <div class="d-sm-flex align-items-center justify-content-between">
+                        <h4 class="font-weight-bold text-primary">Lista <?=$title?></h4>
                     </div>
-                    <div class="card-body table-responsive">
-                        
-                        <table class="table table-bordered text-nowrap">
-                            <thead>
-                                <tr>
-                                    <th>Id</th>
-                                    <th>dispositivo</th>
-                                    <th>descripcion</th>
-                                    <th>fecha / hora</th>
-                                    <th>usuario</th>
-                                    <th>Estado incidente</th>
-                                    <th>Tipo incidente</th>
-                                    <th>Centro de computo</th>
-                                    <th>Opciones</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                   <tr>
-                                    <td>9</td>
-                                    <td>mouse lenovo J15</td>
-                                    <td>El mouse esta cubierto de polvo adjunto foto para la respectiva evidencia</td>
-                                    <td>12-20-2022 12:45:01</td>
-                                    <td>diego25</td>
-                                    <td><span class="bg-warning text-white rounded">Activo</span></td>
-                                    <td>Limpieza</td>
-                                    <td>CT-1</td>
-                                    <td class="project-actions "> 
-                                        <a href="http://codeigniter-crud-diego.test/cliente/addEdit/9" class="btn btn-info btn-sm"><i class="fa fa-pencil-alt"></i></a>
-                                        <a data-toggle="modal" data-target="#modal-delete" onclick="seleccionarClienteParaBorrar(9)" class="btn btn-danger btn-sm"> <i class=" text-white fa fa-trash"></i></a>
-                                    </td>
-                                </tr>   
-                             </tbody>
-                        </table>
-                    </div>
-
-                    <div class="card-footer clearfix">
-                        <div class="row">
-                            <div class="col-md-10">
-                                
-<nav aria-label="Page navigation">
-    <ul class="pagination pagination-sm">
-    
-            <li class=" active page-item">
-            <a class="page-link" href="http://codeigniter-crud-diego.test/index.php/cliente?page=1">
-                1            </a>
-        </li>
-            <li>
-            <a class="page-link" href="http://codeigniter-crud-diego.test/index.php/cliente?page=2">
-                2            </a>
-        </li>
-            <li>
-            <a class="page-link" href="http://codeigniter-crud-diego.test/index.php/cliente?page=3">
-                3            </a>
-        </li>
-    
-            <li class=" page-item">
-            <a class="page-link" href="http://codeigniter-crud-diego.test/index.php/cliente?page=4" aria-label="Next">
-                <strong aria-hidden="true">&gt;</strong>
-            </a>
-        </li>
-        <li class=" page-item">
-            <a class="page-link" href="http://codeigniter-crud-diego.test/index.php/cliente?page=203" aria-label="Last">
-                <strong aria-hidden="true">&gt;&gt;</strong>
-            </a>
-        </li>
-        </ul>
-</nav>                            </div>
-                            <div class="col-md-2">
-                                <form id="frmPageSize" action="http://codeigniter-crud-diego.test/index.php/cliente" method="get">
-                                    <select name="pageSize" class="form-control float-right" style="width: 70px">
-                                         
-                                            <option selected="" value="5">5</option>
-                                         
-                                            <option value="10">10</option>
-                                         
-                                            <option value="25">25</option>
-                                         
-                                            <option value="50">50</option>
-                                         
-                                            <option value="100">100</option>
-                                                                            </select>
-                                </form>
+                </div>
+                <div class="card-body ">
+                    <div class="table-responsive">
+                        <div class="dataTables_wrapper dt-bootstrap4">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <table id="tbl_lista" class="table table-hover table-bordered dataTable">
+                                        <thead>
+                                            <tr>
+                                                <th>Id</th>
+                                                <th>tipo incidente</th>
+                                                <th>Fecha / hora</th>
+                                                <th>Estado incidente</th>
+                                                <th>usuario</th>
+                                                <th>Centro de computo</th>
+                                                <th>Opciones</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <?php if ($incidentes) :?>
+                                                <?php foreach ($incidentes as $I) : ?>
+                                                    <tr>
+                                                        <td><?php echo $I->id; ?></td>
+                                                        <td><?php echo $I->tipo_incidente; ?></td>
+                                                        <td><?php echo $I->fecha_hora_incidente; ?></td>
+                                                        <td><span class="<?php if($I->estado_incidente=="Activo"){ echo 'bg-danger';}else{ echo 'bg-success';}?> text-white rounded"><?php echo $I->estado_incidente; ?></span></td>
+                                                        <td><?php echo $I->usuario; ?></td>
+                                                        <td><?php echo $I->centro_computo; ?></td>
+                                                        <td class="project-actions ">
+                                                        <a data-toggle="modal" data-target="#modal-<?php echo $I->id; ?>" class="btn btn-success btn-sm"><i class="fa fa-check"></i></a>
+                                                            <a data-toggle="modal" data-target="#modal-view-<?php echo $I->id; ?>"  class="btn btn-info btn-sm"> <i class=" text-white fa fa-eye"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                <?php endforeach; ?>
+                                            <?php endif; ?>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Logout Modal-->
-            <div class="modal fade" id="modal-delete" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
+        </div>
+        <!-- add Modal-->
+        <form action="<?= base_url("/incidente/addEdit/0"); ?>" method="post" enctype="multipart/form-data">
+            <div class="modal fade" id="modal-new" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
-                        <div class="modal-header bg-danger">
-                            <h5 class="modal-title text-white" id="exampleModalLabel">Eliminar incidente</h5>
+                        <div class="modal-header bg-success">
+                            <h5 class="modal-title text-white" id="modal-new">Nuevo <?=$title?></h5>
                             <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">×</span>
                             </button>
                         </div>
                         <div class="modal-body">
-                            <form action="<?= base_url("incidente/delete");?>" id="frmDelete" method="post">
-                                            <input type="hidden" id="deleteId" name="id">
-                            </form>
-                            ¿Desea eliminar este incidente?
+                            
+                                <div class="form-group">
+                                    <label for="" class="col-form-label">descripcion:</label>
+                                    <textarea type="text" name="descripcion" class="form-control"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="imagen">Subir foto:</label>
+                                    <div class="custom-file">
+                                                            
+                                        <input type="file" class="custom-file-input" name="imagen" id="imagen">
+                                        <label class="custom-file-label" for="customFile">Subir archivo...</label>
+
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="tipoIncidente">tipo de incidente:</label>
+                                    <select name="id_tipo_incidente" id="id_tipo_incidente" class="form-control">
+                                        <option value="" selected disabled>Seleccione...</option>
+
+                                        <?php foreach($tipoIncidentes as $ti){?>
+                                            <option value="<?=$ti['id']?>"><?=$ti["nombre"]?></option>
+                                        <?php }?>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="id_centro_computo">centro de computo:</label>
+                                    <select name="id_centro_computo" id="id_centro_computo" class="form-control">
+                                        <option value="" selected disabled>Seleccione</option>
+
+                                        <?php foreach($centroComputo as $cc){?>
+                                            <option value="<?=$cc['id']?>"><?=$cc["nombre"]?></option>
+                                        <?php }?>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="tipoIncidente">Dispositivo:</label>
+                                    <select name="id_dispositivo" id="id_dispositivo" class="form-control">
+                                        
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                            <input type="hidden" name="id" id="id" value="<?= $inc['id']?>">
+                                </div>
+                                <div class="form-group">
+                                    <input type="hidden" value="<?= session()->id?>" name="id_usuario"></input>
+                                </div>
                         </div>
                         <div class="modal-footer">
                             <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
-                            <button class="btn btn-danger" onclick=""><i class="fa fa-trash"></i>S&iacute, Eliminar</button>
+                            <button class="btn btn-success" type="submit"><i class="far fa-save"></i> Guardar</button>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </form>
+        <!--End add Modal-->
+        <!-- result Modal-->
+        <?php foreach($resolucion as $re):?>
+        <form action="<?= base_url("/incidente/addEdit/".$re->id); ?>" method="post" enctype="multipart/form-data" id="frmResolucion">
+            <div class="modal fade" id="modal-<?=$re->id?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header bg-warning">
+                            <h5 class="modal-title text-white">Resolucion de <?=$title?></h5>
+                            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>   
+                        </div>
+                        <div class="modal-body">
+                        <div class="alert alert-warning alert-dismissible">
+                            <h6><i class="icon fa fa-exclamation-triangle"></i> Una vez dado resolucion al incidente este no puede ser modificado</h6>
+
+                        </div>
+                                <div class="form-group">
+                                    <label for="" class="col-form-label">Incidente</label>
+                                    <input type="text" name="tipo_incidente" value="<?php if(property_exists($re,'descripcion')){echo $re->descripcion;}else{ echo null;}?>" class="form-control" disabled></input>
+                                </div>
+                                <div class="form-group">
+                                    <label for="" class="col-form-label">Mensaje de Resolucion:</label>
+                                    <textarea type="text" name="mensaje_resolucion" class="form-control"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="imagen_resolucion">foto resolucion: </label>
+                                    <div class="custom-file">
+                                                            
+                                        <input type="file" class="custom-file-input" name="imagen_resolucion" id="imagen_resolucion">
+                                        <label class="custom-file-label" for="customFile">Subir archivo...</label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+										<input type="hidden" name="id" id="id" value="<?= $re->id?>" class="form-control">
+								</div>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
+                            <button class="btn btn-warning" type="submit"><i class="far fa-save"></i>Dar Resolucion</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <?php endforeach; ?>
+        <!--End add Modal-->
+        <!-- View Modal-->
+        <?php foreach($resolucion as $re):?>
+            <div class="modal fade" id="modal-view-<?php echo $re->id; ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header bg-info">
+                            <h5 class="modal-title text-white" id="modal-new">Detalle <?=$title?></h5>
+                            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                Incidente
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="form-group">
+                                                    <label for="">Foto Evidencia:</label>
+                                                    <img class="img-fluid rounded"  src="<?=base_url().$re->foto_evidencia?>">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="">Tipo de incidente:</label>
+                                                    <input type="text" class="form-control " disabled value="<?=$re->tipo_incidente?>">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="">Descripcion:</label>
+                                                    <textarea type="text" class="form-control" disabled><?=$re->descripcion?>
+                                                    </textarea>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="">Fecha / hora de incidente:</label>
+                                                    <input type="text" class="form-control " disabled value="<?=$re->fecha_hora_incidente?>">
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label for="">Dispositivo:</label>
+                                                    <input type="text" class="form-control " disabled value="<?=$re->dispositivo?>">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="">Notificacion de usuario:</label>
+                                                    <input type="text" class="form-control " disabled value="<?=$re->usuario?>">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="">Estado de incidente:</label>
+                                                    <input type="text" class="form-control <?php if($re->estado_incidente=="Activo"){ echo 'bg-danger';}else{ echo 'bg-success';}?> rounded text-white" disabled value="<?=$re->estado_incidente?>">
+                                                </div>
+
+                                                
+                                            </div>
+                                        </div>
+                                       
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="card">
+                                                <div class="card-header">
+                                                    Resolucion
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="form-group">
+                                                        <label for="">Foto Evidencia:</label>
+                                                        <img class="img-fluid rounded" src="<?=base_url().$re->foto_resolucion?>">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="">Mensaje resolucion:</label>
+                                                        <textarea type="text" class="form-control " disabled><?php if($re->mensaje_resolucion != ""){echo $re->mensaje_resolucion;}else{echo 'Sin resolucion';}?></textarea>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="">fecha / hora de resolucion:</label>
+                                                        <input type="text" class="form-control " value="<?php if($re->fecha_hora_resolucion){echo $re->fecha_hora_resolucion;}else{echo 'Sin fecha';}?>" disabled>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-secondary" type="button" data-dismiss="modal">Salir</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <?php endforeach; ?>
+    </div>
 </div>
 <!-- /.container-fluid -->
-<?= $this->endSection()?>
+<?= $this->endSection() ?>

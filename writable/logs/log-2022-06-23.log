@@ -1,0 +1,164 @@
+CRITICAL - 2022-06-23 11:40:31 --> move_uploaded_file(../../public/img/fotos-incidentes/recursosprogramadores.png): failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'move_uploaded_f...', 'C:\\laragon\\www\\...', 64, Array)
+#1 C:\laragon\www\adminComputo\app\Controllers\IncidenteController.php(64): move_uploaded_file('C:\\Users\\user\\A...', '../../public/im...')
+#2 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\IncidenteController->addEdit('0')
+#3 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\IncidenteController))
+#4 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-06-23 11:40:57 --> move_uploaded_file(../../public/img/fotos-incidentes/recursosprogramadores.png): failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'move_uploaded_f...', 'C:\\laragon\\www\\...', 64, Array)
+#1 C:\laragon\www\adminComputo\app\Controllers\IncidenteController.php(64): move_uploaded_file('C:\\Users\\user\\A...', '../../public/im...')
+#2 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\IncidenteController->addEdit('0')
+#3 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\IncidenteController))
+#4 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-06-23 11:42:09 --> Undefined index: id
+#0 C:\laragon\www\adminComputo\app\Views\incidente\index.php(145): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\laragon\\www\\...', 145, Array)
+#1 C:\laragon\www\adminComputo\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\adminComputo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\adminComputo\system\Common.php(1089): CodeIgniter\View\View->render('incidente/index', Array, true)
+#4 C:\laragon\www\adminComputo\app\Controllers\IncidenteController.php(40): view('incidente/index', Array)
+#5 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\IncidenteController->index()
+#6 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\IncidenteController))
+#7 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-23 11:42:24 --> Undefined index: id
+#0 C:\laragon\www\adminComputo\app\Views\incidente\index.php(145): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\laragon\\www\\...', 145, Array)
+#1 C:\laragon\www\adminComputo\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\adminComputo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\adminComputo\system\Common.php(1089): CodeIgniter\View\View->render('incidente/index', Array, true)
+#4 C:\laragon\www\adminComputo\app\Controllers\IncidenteController.php(40): view('incidente/index', Array)
+#5 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\IncidenteController->index()
+#6 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\IncidenteController))
+#7 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-23 11:42:30 --> Undefined index: id
+#0 C:\laragon\www\adminComputo\app\Views\incidente\index.php(145): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\laragon\\www\\...', 145, Array)
+#1 C:\laragon\www\adminComputo\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\adminComputo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\adminComputo\system\Common.php(1089): CodeIgniter\View\View->render('incidente/index', Array, true)
+#4 C:\laragon\www\adminComputo\app\Controllers\IncidenteController.php(40): view('incidente/index', Array)
+#5 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\IncidenteController->index()
+#6 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\IncidenteController))
+#7 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-23 11:42:34 --> Undefined index: id
+#0 C:\laragon\www\adminComputo\app\Views\incidente\index.php(145): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\laragon\\www\\...', 145, Array)
+#1 C:\laragon\www\adminComputo\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\adminComputo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\adminComputo\system\Common.php(1089): CodeIgniter\View\View->render('incidente/index', Array, true)
+#4 C:\laragon\www\adminComputo\app\Controllers\IncidenteController.php(40): view('incidente/index', Array)
+#5 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\IncidenteController->index()
+#6 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\IncidenteController))
+#7 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-23 11:50:59 --> Undefined variable: u
+#0 C:\laragon\www\adminComputo\app\Views\incidente\index.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 60, Array)
+#1 C:\laragon\www\adminComputo\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\adminComputo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\adminComputo\system\Common.php(1089): CodeIgniter\View\View->render('incidente/index', Array, true)
+#4 C:\laragon\www\adminComputo\app\Controllers\IncidenteController.php(40): view('incidente/index', Array)
+#5 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\IncidenteController->index()
+#6 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\IncidenteController))
+#7 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-23 11:51:41 --> Undefined property: stdClass::$estado
+#0 C:\laragon\www\adminComputo\app\Views\incidente\index.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\laragon\\www\\...', 60, Array)
+#1 C:\laragon\www\adminComputo\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\adminComputo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\adminComputo\system\Common.php(1089): CodeIgniter\View\View->render('incidente/index', Array, true)
+#4 C:\laragon\www\adminComputo\app\Controllers\IncidenteController.php(40): view('incidente/index', Array)
+#5 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\IncidenteController->index()
+#6 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\IncidenteController))
+#7 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-23 11:53:03 --> Undefined property: stdClass::$estado
+#0 C:\laragon\www\adminComputo\app\Views\incidente\index.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\laragon\\www\\...', 60, Array)
+#1 C:\laragon\www\adminComputo\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\adminComputo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\adminComputo\system\Common.php(1089): CodeIgniter\View\View->render('incidente/index', Array, true)
+#4 C:\laragon\www\adminComputo\app\Controllers\IncidenteController.php(40): view('incidente/index', Array)
+#5 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\IncidenteController->index()
+#6 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\IncidenteController))
+#7 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-23 11:53:04 --> Undefined property: stdClass::$estado
+#0 C:\laragon\www\adminComputo\app\Views\incidente\index.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\laragon\\www\\...', 60, Array)
+#1 C:\laragon\www\adminComputo\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\adminComputo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\adminComputo\system\Common.php(1089): CodeIgniter\View\View->render('incidente/index', Array, true)
+#4 C:\laragon\www\adminComputo\app\Controllers\IncidenteController.php(40): view('incidente/index', Array)
+#5 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\IncidenteController->index()
+#6 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\IncidenteController))
+#7 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-23 11:58:02 --> Undefined property: stdClass::$estado
+#0 C:\laragon\www\adminComputo\app\Views\incidente\index.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\laragon\\www\\...', 60, Array)
+#1 C:\laragon\www\adminComputo\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\adminComputo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\adminComputo\system\Common.php(1089): CodeIgniter\View\View->render('incidente/index', Array, true)
+#4 C:\laragon\www\adminComputo\app\Controllers\IncidenteController.php(40): view('incidente/index', Array)
+#5 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\IncidenteController->index()
+#6 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\IncidenteController))
+#7 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-23 11:58:43 --> Undefined property: stdClass::$estado
+#0 C:\laragon\www\adminComputo\app\Views\incidente\index.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\laragon\\www\\...', 60, Array)
+#1 C:\laragon\www\adminComputo\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\adminComputo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\adminComputo\system\Common.php(1089): CodeIgniter\View\View->render('incidente/index', Array, true)
+#4 C:\laragon\www\adminComputo\app\Controllers\IncidenteController.php(40): view('incidente/index', Array)
+#5 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\IncidenteController->index()
+#6 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\IncidenteController))
+#7 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-23 23:06:31 --> Cannot use object of type stdClass as array
+#0 C:\laragon\www\adminComputo\system\View\View.php(210): include()
+#1 C:\laragon\www\adminComputo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\laragon\www\adminComputo\system\Common.php(1089): CodeIgniter\View\View->render('incidente/index', Array, true)
+#3 C:\laragon\www\adminComputo\app\Controllers\IncidenteController.php(40): view('incidente/index', Array)
+#4 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\IncidenteController->index()
+#5 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\IncidenteController))
+#6 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-23 23:18:23 --> Cannot use object of type stdClass as array
+#0 C:\laragon\www\adminComputo\system\View\View.php(210): include()
+#1 C:\laragon\www\adminComputo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\laragon\www\adminComputo\system\Common.php(1089): CodeIgniter\View\View->render('incidente/index', Array, true)
+#3 C:\laragon\www\adminComputo\app\Controllers\IncidenteController.php(40): view('incidente/index', Array)
+#4 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\IncidenteController->index()
+#5 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\IncidenteController))
+#6 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-23 23:47:59 --> Undefined variable: resol
+#0 C:\laragon\www\adminComputo\app\Views\incidente\index.php(148): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 148, Array)
+#1 C:\laragon\www\adminComputo\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\adminComputo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\adminComputo\system\Common.php(1089): CodeIgniter\View\View->render('incidente/index', Array, true)
+#4 C:\laragon\www\adminComputo\app\Controllers\IncidenteController.php(42): view('incidente/index', Array)
+#5 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\IncidenteController->index()
+#6 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\IncidenteController))
+#7 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-23 23:59:11 --> Undefined variable: incidentes
+#0 C:\laragon\www\adminComputo\app\Controllers\IncidenteController.php(85): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 85, Array)
+#1 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\IncidenteController->addEdit('9')
+#2 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\IncidenteController))
+#3 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

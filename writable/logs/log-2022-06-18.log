@@ -1,0 +1,64 @@
+CRITICAL - 2022-06-18 19:13:56 --> Call to undefined method app\Models\CentroComputoModel::ListaDispositivos
+#0 C:\laragon\www\adminComputo\app\Controllers\DispositivoController.php(22): CodeIgniter\Model->__call('ListaDispositiv...', Array)
+#1 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\DispositivoController->index()
+#2 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DispositivoController))
+#3 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-18 20:39:50 --> Typed property App\Controllers\DispositivoController::$model must be an instance of App\Models\CentroComputoModel, app\Models\DispositivoModel used
+#0 C:\laragon\www\adminComputo\system\CodeIgniter.php(809): App\Controllers\DispositivoController->__construct()
+#1 C:\laragon\www\adminComputo\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#2 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-06-18 20:40:09 --> Typed property App\Controllers\DispositivoController::$model must be an instance of App\Models\CentroComputoModel, app\Models\DispositivoModel used
+#0 C:\laragon\www\adminComputo\system\CodeIgniter.php(809): App\Controllers\DispositivoController->__construct()
+#1 C:\laragon\www\adminComputo\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#2 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-06-18 20:40:58 --> Typed property App\Controllers\DispositivoController::$model must be an instance of App\Models\CentroComputoModel, app\Models\DispositivoModel used
+#0 C:\laragon\www\adminComputo\system\CodeIgniter.php(809): App\Controllers\DispositivoController->__construct()
+#1 C:\laragon\www\adminComputo\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#2 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-06-18 23:24:39 --> Undefined variable: centroComputo
+#0 C:\laragon\www\adminComputo\app\Controllers\DispositivoController.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 56, Array)
+#1 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\DispositivoController->addEdit('0')
+#2 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DispositivoController))
+#3 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-18 23:26:00 --> Undefined variable: centroComputo
+#0 C:\laragon\www\adminComputo\app\Controllers\DispositivoController.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 56, Array)
+#1 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\DispositivoController->addEdit('0')
+#2 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DispositivoController))
+#3 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-18 23:27:08 --> Undefined variable: centroComputo
+#0 C:\laragon\www\adminComputo\app\Controllers\DispositivoController.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 56, Array)
+#1 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\DispositivoController->addEdit('0')
+#2 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DispositivoController))
+#3 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-18 23:27:12 --> Undefined variable: centroComputo
+#0 C:\laragon\www\adminComputo\app\Controllers\DispositivoController.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 56, Array)
+#1 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\DispositivoController->addEdit('0')
+#2 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DispositivoController))
+#3 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-18 23:27:40 --> Illegal string offset 'id'
+#0 C:\laragon\www\adminComputo\app\Views\dispositivo\addEdit.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', 'C:\\laragon\\www\\...', 163, Array)
+#1 C:\laragon\www\adminComputo\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\adminComputo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\adminComputo\system\Common.php(1089): CodeIgniter\View\View->render('dispositivo/add...', Array, true)
+#4 C:\laragon\www\adminComputo\app\Controllers\DispositivoController.php(66): view('dispositivo/add...', Array)
+#5 C:\laragon\www\adminComputo\system\CodeIgniter.php(832): App\Controllers\DispositivoController->addEdit('0')
+#6 C:\laragon\www\adminComputo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DispositivoController))
+#7 C:\laragon\www\adminComputo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\adminComputo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}

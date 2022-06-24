@@ -15,10 +15,7 @@ class CentroComputoController extends BaseController
 
     public function index()
     {
-        $pageSize = $this->request->getVar('pageSize') ?? 5;
-        $page = $this->request->getVar('page') ?? 1;
-
-        $centroComputo = $this->model->ListaCentroComputo()/*->paginate($pageSize,'default',$page)*/;
+        $centroComputo = $this->model->ListaCentroComputo();
         $data=[
             'centroComputo'=>$centroComputo,
             'title'=>'Centro de computo',
@@ -30,7 +27,7 @@ class CentroComputoController extends BaseController
 
         $method = $this->request->getMethod();
         if($id == 0):
-            $title = "Nuevo Centro de computo";
+            $title = "Centro de computo";
             $centroComputo = ["id" => 0];
             $estados = $this->modelEstado->findAll();
             $color ="success";
@@ -38,7 +35,7 @@ class CentroComputoController extends BaseController
             $icono = "far fa-save";
             $std = "";
         else:
-            $title = "Editar Cliente";
+            $title = "Editar centro de computo";
             $centroComputo = $this->model->find($id); 
             $color ="warning"; 
             $accion ="Actualizar";
@@ -87,7 +84,7 @@ class CentroComputoController extends BaseController
                     return view('centrocomputo/addEdit',$data);
                 else:
                     $alertType = $id == 0 ? 'alert-success':'alert-warning';
-                    $alertTitle = $id == 0 ? 'Centro de computo Registrado':'Cliente Actualizado';
+                    $alertTitle = $id == 0 ? 'Centro de computo Registrado':'Centro de computo Actualizado';
                     $alertMessage = $id == 0 ? 'Los datos del centro de computo han sido registrados exitosamente':'Los datos del centro de computo han sido actualizados exitosamente';
 
                      return redirect()->to('/centro-computo')
@@ -98,5 +95,31 @@ class CentroComputoController extends BaseController
             break;
         endswitch;   
     }
+    public function delete(){
+        $request = $this->request->getPost();
+        $id = $request['id'];
 
+        $centroComputo =  $this->model->find($id);
+
+        if(isset($centroComputo)):
+            if($this->model->delete($id)):
+                $alertType = 'alert-danger';
+                $alertTitle = 'centro de computo Eliminado';
+                $alertMessage = 'Los datos del centro de computo han sido eliminados exitosamente';
+            else:
+                $alertType = 'alert-warning';
+                $alertTitle = 'centro de computo no fue Eliminado';
+                $alertMessage = 'El centro de computo no fue eliminado, intente nuevamente';
+            endif;
+        else: 
+            $alertType = 'alert-warning';
+            $alertTitle = 'centro de computo no valido';
+            $alertMessage = 'El centro de computo que intenta eliminar no existe';
+        endif;
+
+        return redirect()->to('/centro-computo')
+               ->with('alert-type',$alertType)
+               ->with('alert-title',$alertTitle)
+               ->with('alert-message',$alertMessage);
+   }
 }
