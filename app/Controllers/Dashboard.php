@@ -29,7 +29,7 @@ class Dashboard extends BaseController
         $password = md5($this->request->getVar("password"));
 
         $data = $this->model->where("usuario",$user)->where("id_estado","1")->first();
-        $log = $this->model->select("id,nombre,apellido,usuario")->where("usuario",$user)->where("password",$password)->first();
+        $log = $this->model->select("id,nombre,apellido,usuario,id_rol")->where("usuario",$user)->where("password",$password)->first();
         if($data){
             if($log){
                 $ses_data=[
@@ -37,6 +37,7 @@ class Dashboard extends BaseController
                     "nombre" =>$data["nombre"],
                     "apellido" =>$data["apellido"],
                     "usuario" =>$data["usuario"],
+                    "rol"=>$data["id_rol"],
                     "sesion" => "TRUE"
                 ];
                 $session->setTempdata($ses_data,300);

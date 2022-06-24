@@ -53,6 +53,7 @@
                                         <tbody>
                                             <?php if ($incidentes) :?>
                                                 <?php foreach ($incidentes as $I) : ?>
+                                                    <?php if(session()->rol == 1) :?>
                                                     <tr>
                                                         <td><?php echo $I->id; ?></td>
                                                         <td><?php echo $I->tipo_incidente; ?></td>
@@ -61,10 +62,27 @@
                                                         <td><?php echo $I->usuario; ?></td>
                                                         <td><?php echo $I->centro_computo; ?></td>
                                                         <td class="project-actions ">
-                                                        <a data-toggle="modal" data-target="#modal-<?php echo $I->id; ?>" class="btn btn-success btn-sm"><i class="fa fa-check"></i></a>
+                                                           <?php if($I->estado_incidente == "Activo" && session("rol")==1){?><a data-toggle="modal" data-target="#modal-<?php echo $I->id; ?>" class="btn btn-success btn-sm"><i class="fa fa-check"></i></a><?php }?>
                                                             <a data-toggle="modal" data-target="#modal-view-<?php echo $I->id; ?>"  class="btn btn-info btn-sm"> <i class=" text-white fa fa-eye"></i></a>
                                                         </td>
                                                     </tr>
+                                                    <?php else :?>
+                                                            <?php if(session()->usuario== $I->usuario):?>
+                                                                <tr>
+                                                                    <td><?php echo $I->id; ?></td>
+                                                                    <td><?php echo $I->tipo_incidente; ?></td>
+                                                                    <td><?php echo $I->fecha_hora_incidente; ?></td>
+                                                                    <td><span class="<?php if($I->estado_incidente=="Activo"){ echo 'bg-danger';}else{ echo 'bg-success';}?> text-white rounded"><?php echo $I->estado_incidente; ?></span></td>
+                                                                    <td><?php echo $I->usuario; ?></td>
+                                                                    <td><?php echo $I->centro_computo; ?></td>
+                                                                    <td class="project-actions ">
+                                                                    <?php if($I->estado_incidente == "Activo" && session("rol")== 1){?><a data-toggle="modal" data-target="#modal-<?php echo $I->id; ?>" class="btn btn-success btn-sm"><i class="fa fa-check"></i></a><?php }?>
+                                                                        <a data-toggle="modal" data-target="#modal-view-<?php echo $I->id; ?>"  class="btn btn-info btn-sm"> <i class=" text-white fa fa-eye"></i></a>
+                                                                    </td>
+                                                                </tr>
+                                                            <?php endif;?>
+                                                    <?php endif;?>
+                                                    
                                                 <?php endforeach; ?>
                                             <?php endif; ?>
                                         </tbody>
@@ -254,8 +272,8 @@
                                                 </div>
                                                 <div class="card-body">
                                                     <div class="form-group">
-                                                        <label for="">Foto Evidencia:</label>
-                                                        <img class="img-fluid rounded" src="<?=base_url().$re->foto_resolucion?>">
+                                                        <label for="">Foto Resolucion:</label>
+                                                        <img class="img-fluid rounded" src="<?=base_url().$re->foto_resolucion?>" alt="Sin resolucion">
                                                     </div>
                                                     <div class="form-group">
                                                         <label for="">Mensaje resolucion:</label>

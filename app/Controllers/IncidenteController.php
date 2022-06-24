@@ -69,7 +69,7 @@ class IncidenteController extends BaseController{
                     $incidentes['foto_evidencia'] = $url ;
 
                     $incidentes['id_estado_incidente'] = 1;  
-                    $incidentes['fecha_hora_incidente']= date('Y-m-d h:i:sa', time());
+                    $incidentes['fecha_hora_incidente']= date('d-m-Y h:i:sa', time());
                     /*
                     -acceso de usuario
                     -bitacora
@@ -87,7 +87,7 @@ class IncidenteController extends BaseController{
                     $incidentes['foto_resolucion']=$url_resolucion;
                     $incidentes['mensaje_resolucion']=$request['mensaje_resolucion'];
                     if($this->request->getPost('mensaje_resolucion')){
-                        $incidentes['fecha_hora_resolucion']= date('Y-m-d h:i:sa', time());
+                        $incidentes['fecha_hora_resolucion']= date('d-m-Y h:i:sa', time());
                     }
                 endif;
 

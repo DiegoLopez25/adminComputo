@@ -68,7 +68,7 @@
                                                         <td><?php echo $u->rol; ?></td>
                                                         <td class="project-actions ">
                                                             <a href="<?= base_url('/usuario/addEdit/'.$u->id)?>" class="btn btn-info btn-sm"><i class="fa fa-pencil-alt"></i></a>
-                                                            <a data-toggle="modal" data-target="#modal-delete" onclick="seleccionarUsuarioParaBorrar(<?= $u->id ?>)" class="btn btn-danger btn-sm"> <i class=" text-white fa fa-trash"></i></a>
+                                                            <?php if(!($u->id == session()->get('id'))){?><a data-toggle="modal" data-target="#modal-delete" onclick="seleccionarUsuarioParaBorrar(<?= $u->id ?>)" class="btn btn-danger btn-sm"> <i class=" text-white fa fa-trash"></i></a><?php }?>
                                                         </td>
                                                     </tr>
                                                 <?php endforeach; ?>
