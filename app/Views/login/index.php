@@ -43,6 +43,15 @@
                                     <div class="text-center">
                                         <h1 class="h4 text-gray-900 mb-4">Iniciar Sesion</h1>
                                     </div>
+                                    <?php if (session()->getFlashdata('alert-type')): ?>
+                                        <div class="col-12 mt-2">
+                                            <div class="alert <?= session()->getFlashdata('alert-type'); ?> alert-dismissible">
+                                                <button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button>
+                                                <h5><i class="icon fas fa-info"></i> <?= session()->getFlashdata('alert-title'); ?></h5>
+                                                <?= session()->getFlashdata('alert-message'); ?>
+                                            </div>
+                                        </div>
+                                    <?php endif ?>
                                     <form class="user" action="<?=base_url('/dashboard'); ?>" autocomplete="true" method="post">
                                         <div class="form-group">
                                             <input type="text" name="username" class="form-control form-control-user"

@@ -1,0 +1,1 @@
+__ci_last_regenerate|i:1656107479;alert-type|s:12:"alert-danger";__ci_vars|a:3:{s:10:"alert-type";s:3:"old";s:11:"alert-title";s:3:"old";s:13:"alert-message";s:3:"old";}alert-title|s:25:"Tiempo de Sesion expirada";alert-message|s:68:"Su sesión ha excedido el tiempo límite. Por favor, entre de nuevo.";_ci_previous_url|s:30:"http://admincomputo.test/login";

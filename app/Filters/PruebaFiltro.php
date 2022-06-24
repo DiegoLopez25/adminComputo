@@ -13,7 +13,12 @@ class PruebaFiltro implements FilterInterface
         // Do something here
         
         if(!session()->get('sesion')){
-            return redirect()->to('/login');
+            $alertTitle = "Tiempo de Sesion expirada";
+            $alertType = "alert-danger";
+            $alertMessage = "Su sesión ha excedido el tiempo límite. Por favor, entre de nuevo.";
+            return redirect()->to('/login')->with('alert-type',$alertType)
+            ->with('alert-title',$alertTitle)
+            ->with('alert-message',$alertMessage);
         }
     }
 
