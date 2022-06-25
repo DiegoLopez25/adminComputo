@@ -43,7 +43,6 @@ $routes->post('/centro-computo/delete','CentroComputoController::delete',['filte
 $routes->get('/usuario','UsuarioController::index',['filter'=>'pruebaFiltro','filter'=>'accesoFiltro','filter'=>'accesoFiltro']);
 $routes->get('/usuario/addEdit/(:num)','UsuarioController::addEdit/$1',['filter'=>'pruebaFiltro','filter'=>'accesoFiltro']);
 $routes->post('/usuario/addEdit/(:num)','UsuarioController::addEdit/$1',['filter'=>'pruebaFiltro','filter'=>'accesoFiltro']);
-$routes->post('/usuario/delete','UsuarioController::delete',['filter'=>'pruebaFiltro','filter'=>'accesoFiltro']);
 $routes->get('/dispositivo','DispositivoController::index',['filter'=>'pruebaFiltro','filter'=>'accesoFiltro']);
 $routes->get('/dispositivo/addEdit/(:num)','DispositivoController::addEdit/$1',['filter'=>'pruebaFiltro','filter'=>'accesoFiltro']);
 $routes->post('/dispositivo/addEdit/(:num)','DispositivoController::addEdit/$1',['filter'=>'pruebaFiltro','filter'=>'accesoFiltro']);
@@ -56,7 +55,8 @@ $routes->get('/incidente','IncidenteController::index',['filter'=>'pruebaFiltro'
 $routes->post('/incidente/action','IncidenteController::action');
 $routes->get('/incidente/addEdit/(:num)','IncidenteController::addEdit/$1',['filter'=>'pruebaFiltro','filter'=>'accesoFiltro']);
 $routes->post('/incidente/addEdit/(:num)','IncidenteController::addEdit/$1',['filter'=>'pruebaFiltro','filter'=>'accesoFiltro']);
-
+$routes->get('/bitacora','BitacoraController::index',['filter'=>'pruebaFiltro','filter'=>'accesoFiltro']);
+$routes->post('/bitacora/addEdit/(:num)','BitacoraController::addEdit/$1',['filter'=>'pruebaFiltro','filter'=>'accesoFiltro']);
 /*
  * --------------------------------------------------------------------
  * Additional Routing

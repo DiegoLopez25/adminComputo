@@ -2,14 +2,18 @@
 namespace App\Controllers;
 
 use App\Models\TipoIncidenteModel;
+use App\Models\BitacoraModel;
 
 class TipoIncidenteController extends BaseController{
 
     protected TipoIncidenteModel $model;
+    protected BitacoraModel $modelBitacora;
+
 
     function __construct()
     {
         $this->model = new TipoIncidenteModel();
+        $this->model = new BitacoraModel();
     }
 
     public function index()
@@ -30,6 +34,7 @@ class TipoIncidenteController extends BaseController{
             $color ="success";
             $accion = "Guardar";
             $icono = "far fa-save";
+
         else:
             $title = "Editar Tipo Incidente";
             $tipoIncidente = $this->model->find($id); 
@@ -55,9 +60,19 @@ class TipoIncidenteController extends BaseController{
 
                 if($id == 0):
                     $tipoIncidente = $request; 
+                    $this->modelBitacora->save([
+                        'accion' =>'Registro un nuevo tipo de incidente con nombre'.$request['nombre'],
+                        'fecha_hora' => date('d-m-Y h:i:sa', time()),
+                        'id_usuario' => session()->id
+                    ]);
                 else:
                     $tipoIncidente['nombre'] = $request['nombre'];
                     $tipoIncidente['descripcion'] = $request['descripcion'];
+                    $this->modelBitacora->save([
+                        'accion' =>'Edito un tipo de incidente con id '.$tipoIncidente['id'].' de nombre'.$tipoIncidente['nombre'] ,
+                        'fecha_hora' => date('d-m-Y h:i:sa', time()),
+                        'id_usuario' => session()->id
+                    ]);
                 endif;
 
                 if($this->model->save($tipoIncidente) === false):
@@ -94,6 +109,11 @@ class TipoIncidenteController extends BaseController{
 
         if(isset($tipoIncidente)):
             if($this->model->delete($id)):
+                $this->modelBitacora->save([
+                    'accion' =>'Elimino el tipo de incidente '.$tipoIncidente['nombre'].' con id'.$tipoIncidente['id'],
+                    'fecha_hora' => date('d-m-Y h:i:sa', time()),
+                    'id_usuario' => session()->id
+                ]);
                 $alertType = 'alert-danger';
                 $alertTitle = 'Tipo incidente Eliminado';
                 $alertMessage = 'Los datos del Tipo incidente han sido eliminados exitosamente';

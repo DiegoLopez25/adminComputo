@@ -2,15 +2,19 @@
 namespace App\Controllers;
 use App\Models\CentroComputoModel;
 use App\Models\EstadoModel;
+use App\Models\BitacoraModel;
 
 class CentroComputoController extends BaseController
 {
     protected CentroComputoModel $model;
     protected EstadoModel $modelEstado;
+    protected BitacoraModel $modelBitacora;
+
     function __construct()
     {
         $this->model = new CentroComputoModel();
         $this->modelEstado = new EstadoModel();
+        $this->modelBitacora = new BitacoraModel();
     }
 
     public function index()
@@ -64,10 +68,22 @@ class CentroComputoController extends BaseController
                 if($id == 0):
                     $centroComputo = $request;
                     $centroComputo['id_estado'] = 1;  
+
+                    $this->modelBitacora->save([
+                        'accion' =>'Registro un nuevo centro de computo con nombre'.$request['nombre'],
+                        'fecha_hora' => date('d-m-Y h:i:sa', time()),
+                        'id_usuario' => session()->id
+                    ]);
                 else:
                     $centroComputo['nombre'] = $request['nombre'];
                     $centroComputo['descripcion'] = $request['descripcion'];
                     $centroComputo['estado'] = $request['estado'];
+
+                    $this->modelBitacora->save([
+                        'accion' =>'Edito el centro computo con id '.$centroComputo['id'].' de nombre'.$centroComputo['nombre'] ,
+                        'fecha_hora' => date('d-m-Y h:i:sa', time()),
+                        'id_usuario' => session()->id
+                    ]);
                 endif;
 
                 if($this->model->save($centroComputo) === false):
@@ -103,6 +119,11 @@ class CentroComputoController extends BaseController
 
         if(isset($centroComputo)):
             if($this->model->delete($id)):
+                $this->modelBitacora->save([
+                    'accion' =>'Elimino el centro de computo '.$centroComputo['nombre'].' con id'.$centroComputo['id'],
+                    'fecha_hora' => date('d-m-Y h:i:sa', time()),
+                    'id_usuario' => session()->id
+                ]);
                 $alertType = 'alert-danger';
                 $alertTitle = 'centro de computo Eliminado';
                 $alertMessage = 'Los datos del centro de computo han sido eliminados exitosamente';

@@ -68,7 +68,6 @@
                                                         <td><?php echo $u->rol; ?></td>
                                                         <td class="project-actions ">
                                                             <a href="<?= base_url('/usuario/addEdit/'.$u->id)?>" class="btn btn-info btn-sm"><i class="fa fa-pencil-alt"></i></a>
-                                                            <?php if(!($u->id == session()->get('id'))){?><a data-toggle="modal" data-target="#modal-delete" onclick="seleccionarUsuarioParaBorrar(<?= $u->id ?>)" class="btn btn-danger btn-sm"> <i class=" text-white fa fa-trash"></i></a><?php }?>
                                                         </td>
                                                     </tr>
                                                 <?php endforeach; ?>
@@ -82,39 +81,7 @@
                 </div>
             </div>
         </div>
-        <!-- Logout Modal-->
-        <div class="modal fade" id="modal-delete" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header bg-danger">
-                        <h5 class="modal-title text-white" id="exampleModalLabel">Eliminar <?=$title?></h5>
-                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">×</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <form action="<?= base_url("/usuario/delete"); ?>" id="frmDelete" method="post">
-                            <input type="hidden" id="deleteId" name="id">
-                        </form>
-                        ¿Desea eliminar este <?=$title?>?
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
-                        <button class="btn btn-danger" onclick="borrarUsuario()"><i class="fa fa-trash"></i>S&iacute, Eliminar</button>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 </div>
-    <script>
-        function seleccionarUsuarioParaBorrar(val){
-            document.getElementById('deleteId').value = val
-        }
-
-        function borrarUsuario(){
-            document.getElementById('frmDelete').submit()
-        }
-    </script>
 <!-- /.container-fluid -->
 <?= $this->endSection() ?>

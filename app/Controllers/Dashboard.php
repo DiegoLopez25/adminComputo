@@ -2,19 +2,22 @@
 
 namespace App\Controllers;
 use App\Models\UsuarioModel;
+use App\Models\BitacoraModel;
 
 
 class Dashboard extends BaseController
 {
     protected UsuarioModel $model;
+    protected BitacoraModel $modelBitacora;
 
     function __construct()
     {   
         $this->model = new UsuarioModel();
+        $this->modelBitacora = new BitacoraModel();
     }
 
     public function index()
-    {     
+    {    
         return view('dashboard/index');
     }
 
@@ -24,6 +27,7 @@ class Dashboard extends BaseController
     }
 
     public function iniciarSesion(){
+        date_default_timezone_set('America/El_Salvador');
         $session = session();
         $user = $this->request->getVar("username");
         $password = md5($this->request->getVar("password"));
@@ -32,6 +36,7 @@ class Dashboard extends BaseController
         $log = $this->model->select("id,nombre,apellido,usuario,id_rol")->where("usuario",$user)->where("password",$password)->first();
         if($data){
             if($log){
+
                 $ses_data=[
                     "id" =>$data["id"],
                     "nombre" =>$data["nombre"],
@@ -40,6 +45,13 @@ class Dashboard extends BaseController
                     "rol"=>$data["id_rol"],
                     "sesion" => "TRUE"
                 ];
+
+                $this->modelBitacora->save([
+                    'accion' =>'Inicio de sesion',
+                    'fecha_hora' => date('d-m-Y h:i:sa', time()),
+                    'id_usuario' => $ses_data['id']
+                ]);
+
                 $session->setTempdata($ses_data,300);
                 return redirect()->to('/dashboard');   
             }else{
@@ -54,6 +66,11 @@ class Dashboard extends BaseController
 
     public function cerrarSesion(){
         session();
+        $this->modelBitacora->save([
+            'accion' =>'cierre de sesion',
+            'fecha_hora' => date('d-m-Y h:i:sa', time()),
+            'id_usuario' => session()->id
+        ]);
         session()->destroy();
         return redirect()->to('/login');
     }

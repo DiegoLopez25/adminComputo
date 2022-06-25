@@ -4,18 +4,22 @@ namespace App\Controllers;
 use App\Models\CentroComputoModel;
 use App\Models\EstadoModel;
 use App\Models\DispositivoModel;
+use App\Models\BitacoraModel;
 
 class DispositivoController extends BaseController
 {
     protected DispositivoModel $model; 
     protected CentroComputoModel $modelCentroComputo;
     protected EstadoModel $modelEstado;
+    protected BitacoraModel $modelBitacora;
+    
 
     function __construct()
     {
         $this->model = new DispositivoModel ();
         $this->modelEstado = new EstadoModel();
         $this->modelCentroComputo = new CentroComputoModel();
+        $this->modelBitacora = new BitacoraModel();
     }
     public function index()
     {
@@ -74,12 +78,24 @@ class DispositivoController extends BaseController
 
                 if($id == 0):
                     $dispositivos = $request;
-                    $dispositivos['id_estado'] = 1;  
+                    $dispositivos['id_estado'] = 1; 
+                    
+                    $this->modelBitacora->save([
+                        'accion' =>'Registro un nuevo dispositivo con nombre'.$request['nombre'],
+                        'fecha_hora' => date('d-m-Y h:i:sa', time()),
+                        'id_usuario' => session()->id
+                    ]);
                 else:
                     $dispositivos['serial'] = $request['serial'];
                     $dispositivos['nombre'] = $request['nombre'];
                     $dispositivos['id_estado'] = $request['id_estado'];
                     $dispositivos['id_centro_computo'] = $request['id_centro_computo'];
+
+                    $this->modelBitacora->save([
+                        'accion' =>'Edito el dispositivo con id '.$dispositivos['id'].' de nombre'.$dispositivos['nombre'] ,
+                        'fecha_hora' => date('d-m-Y h:i:sa', time()),
+                        'id_usuario' => session()->id
+                    ]);
                 endif;
 
                 if($this->model->save($dispositivos) === false):
@@ -115,6 +131,11 @@ class DispositivoController extends BaseController
 
         if(isset($dispositivos)):
             if($this->model->delete($id)):
+                $this->modelBitacora->save([
+                    'accion' =>'Elimino el dispositivo '.$dispositivos['nombre'].' con id'.$dispositivos['id'],
+                    'fecha_hora' => date('d-m-Y h:i:sa', time()),
+                    'id_usuario' => session()->id
+                ]);
                 $alertType = 'alert-danger';
                 $alertTitle = 'Dispositivo Eliminado';
                 $alertMessage = 'Los datos del dispositivo han sido eliminados exitosamente';

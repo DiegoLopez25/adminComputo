@@ -48,7 +48,7 @@
                                             <div class="alert <?= session()->getFlashdata('alert-type'); ?> alert-dismissible">
                                                 <button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button>
                                                 <h5><i class="icon fas fa-info"></i> <?= session()->getFlashdata('alert-title'); ?></h5>
-                                                <?= session()->getFlashdata('alert-message'); ?>
+                                                <?= session()->getFlashdata('alert-message'); session_destroy(); ?>
                                             </div>
                                         </div>
                                     <?php endif ?>

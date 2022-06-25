@@ -6,6 +6,7 @@ use App\Models\CentroComputoModel;
 use App\Models\UsuarioModel;
 use App\Models\DispositivoModel;
 use App\Models\IncidenteModel;
+use App\Models\BitacoraModel;
 
 class IncidenteController extends BaseController{
 
@@ -14,6 +15,8 @@ class IncidenteController extends BaseController{
     protected TipoIncidenteModel $modelTipoIncidente;
     protected UsuarioModel $modelUsuario;
     protected DispositivoModel $modelDispositivo;
+    protected BitacoraModel $modelBitacora;
+    
 
     function __construct()
     {
@@ -22,6 +25,7 @@ class IncidenteController extends BaseController{
         $this->modelTipoIncidente = new TipoIncidenteModel();
         $this->modelUsuario = new UsuarioModel();
         $this->modelDispositivo = new DispositivoModel();
+        $this->modelBitacora = new BitacoraModel();
     }
 
     public function index(){
@@ -60,6 +64,14 @@ class IncidenteController extends BaseController{
                 session();
                 if($id == 0):
                     date_default_timezone_set('America/El_Salvador');
+
+                    $this->modelBitacora->save([
+                        'accion' =>'Registro un nuevo incidente con descripcion "'.$request['descripcion'].'"',
+                        'fecha_hora' => date('d-m-Y h:i:sa', time()),
+                        'id_usuario' => session()->id
+                    ]);
+
+
                     $incidentes = $request;
 
                     $imgNombre = $_FILES["imagen"]["name"];
@@ -71,8 +83,6 @@ class IncidenteController extends BaseController{
                     $incidentes['id_estado_incidente'] = 1;  
                     $incidentes['fecha_hora_incidente']= date('d-m-Y h:i:sa', time());
                     /*
-                    -acceso de usuario
-                    -bitacora
                     -filtrar
                     -generar reporte
                     */
@@ -89,6 +99,12 @@ class IncidenteController extends BaseController{
                     if($this->request->getPost('mensaje_resolucion')){
                         $incidentes['fecha_hora_resolucion']= date('d-m-Y h:i:sa', time());
                     }
+
+                    $this->modelBitacora->save([
+                        'accion' =>'Dio resolucion a un incidente con mensaje de resolucion "'.$request['mesaje_resolucion'].'"',
+                        'fecha_hora' => date('d-m-Y h:i:sa', time()),
+                        'id_usuario' => session()->id
+                    ]);
                 endif;
 
                 if($this->model->save($incidentes) === false):

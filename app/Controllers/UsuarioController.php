@@ -4,18 +4,21 @@ namespace App\Controllers;
 use App\Models\UsuarioModel;
 use App\Models\EstadoModel;
 use App\Models\RolModel;
+use App\Models\BitacoraModel;
 
 class UsuarioController extends BaseController
 {
     protected UsuarioModel $model; 
     protected RolModel $modelRol;
     protected EstadoModel $modelEstado;
+    protected BitacoraModel $modelBitacora;
 
     function __construct()
     {
         $this->model = new UsuarioModel();
         $this->modelEstado = new EstadoModel();
         $this->modelRol = new RolModel();
+        $this->modelBitacora = new BitacoraModel();
     }
     public function index()
     {
@@ -73,6 +76,13 @@ class UsuarioController extends BaseController
                 $request = $this->request->getPost();
 
                 if($id == 0):
+
+                    $this->modelBitacora->save([
+                        'accion' =>'Registro un nuevo usuario con nombre "'.$request['nombre'].'" y usuario "'.$request['usuario'].'"',
+                        'fecha_hora' => date('d-m-Y h:i:sa', time()),
+                        'id_usuario' => session()->id
+                    ]);
+
                     $usuarios = $request;
                     $usuarios['password'] = md5($request['password']);
                     $usuarios['id_estado'] = 1;  
@@ -86,6 +96,12 @@ class UsuarioController extends BaseController
                     $usuarios['password'] = md5($request['password']);
                     $usuarios['id_estado'] = $request['id_estado'];
                     $usuarios['id_rol'] = $request['id_rol'];
+
+                    $this->modelBitacora->save([
+                        'accion' =>'Edito un usuario con nombre "'.$usuarios['nombre'].'" con id "'.$usuarios['id'].'"',
+                        'fecha_hora' => date('d-m-Y h:i:sa', time()),
+                        'id_usuario' => session()->id
+                    ]);
                 endif;
 
                 if($this->model->save($usuarios) === false):
@@ -113,31 +129,4 @@ class UsuarioController extends BaseController
             break;
         endswitch;   
     }
-    public function delete(){
-        $request = $this->request->getPost();
-        $id = $request['id'];
-
-        $usuarios =  $this->model->find($id);
-
-        if(isset($usuarios)):
-            if($this->model->delete($id)):
-                $alertType = 'alert-danger';
-                $alertTitle = 'Usuario Eliminado';
-                $alertMessage = 'Los datos del Usuario han sido eliminados exitosamente';
-            else:
-                $alertType = 'alert-warning';
-                $alertTitle = 'El Usuario no fue Eliminado';
-                $alertMessage = 'El Usuario no fue eliminado, intente nuevamente';
-            endif;
-        else: 
-            $alertType = 'alert-warning';
-            $alertTitle = 'Usuario no valido';
-            $alertMessage = 'El Usuario que intenta eliminar no existe';
-        endif;
-
-        return redirect()->to('/usuario')
-               ->with('alert-type',$alertType)
-               ->with('alert-title',$alertTitle)
-               ->with('alert-message',$alertMessage);
-   }
 }
