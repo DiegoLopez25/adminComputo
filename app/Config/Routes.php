@@ -51,10 +51,10 @@ $routes->get('/tipo-incidente','TipoIncidenteController::index',['filter'=>'prue
 $routes->post('/tipo-incidente/addEdit/(:num)','TipoIncidenteController::addEdit/$1',['filter'=>'pruebaFiltro','filter'=>'accesoFiltro']);
 $routes->get('/tipo-incidente/addEdit/(:num)','TipoIncidenteController::addEdit/$1',['filter'=>'pruebaFiltro','filter'=>'accesoFiltro']);
 $routes->post('/tipo-incidente/delete','TipoIncidenteController::delete',['filter'=>'pruebaFiltro','filter'=>'accesoFiltro']);
-$routes->get('/incidente','IncidenteController::index',['filter'=>'pruebaFiltro','filter'=>'accesoFiltro']);
+$routes->get('/incidente','IncidenteController::index',['filter'=>'pruebaFiltro']);
 $routes->post('/incidente/action','IncidenteController::action');
 $routes->get('/incidente/addEdit/(:num)','IncidenteController::addEdit/$1',['filter'=>'pruebaFiltro','filter'=>'accesoFiltro']);
-$routes->post('/incidente/addEdit/(:num)','IncidenteController::addEdit/$1',['filter'=>'pruebaFiltro','filter'=>'accesoFiltro']);
+$routes->post('/incidente/addEdit/(:num)','IncidenteController::addEdit/$1',['filter'=>'pruebaFiltro']);
 $routes->get('/bitacora','BitacoraController::index',['filter'=>'pruebaFiltro','filter'=>'accesoFiltro']);
 $routes->post('/bitacora/addEdit/(:num)','BitacoraController::addEdit/$1',['filter'=>'pruebaFiltro','filter'=>'accesoFiltro']);
 /*

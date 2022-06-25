@@ -30,10 +30,10 @@ class Dashboard extends BaseController
         date_default_timezone_set('America/El_Salvador');
         $session = session();
         $user = $this->request->getVar("username");
-        $password = md5($this->request->getVar("password"));
+        $pass = md5($this->request->getVar("password"));
 
         $data = $this->model->where("usuario",$user)->where("id_estado","1")->first();
-        $log = $this->model->select("id,nombre,apellido,usuario,id_rol")->where("usuario",$user)->where("password",$password)->first();
+        $log = $this->model->select("id,nombre,apellido,usuario,id_rol")->where("usuario",$user)->where("password",$pass)->first();
         if($data){
             if($log){
 
@@ -52,7 +52,7 @@ class Dashboard extends BaseController
                     'id_usuario' => $ses_data['id']
                 ]);
 
-                $session->setTempdata($ses_data,300);
+                $session->setTempdata($ses_data,600);
                 return redirect()->to('/dashboard');   
             }else{
                 $msg = "La contraseña que ingreso es incorrecta";
